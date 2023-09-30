@@ -11,8 +11,12 @@
             "id": "d57e4140a6765422",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Inside the Apache Kafka Broker.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -61,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Inside the Apache Kafka Broker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Inside the Apache Kafka Broker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Inside the Apache Kafka Broker.md"
+              }
             }
           }
         ]
@@ -141,11 +148,11 @@
   },
   "active": "d57e4140a6765422",
   "lastOpenFiles": [
-    "2023-09-30.md",
-    "무제 파일 2.canvas",
     "무제 파일 1.canvas",
     "무제 파일.canvas",
     "Inside the Apache Kafka Broker.md",
+    "2023-09-30.md",
+    "무제 파일 2.canvas",
     "my_obsidian",
     "The Fundamentals.md",
     "images/Pasted image 20230928235549.png",

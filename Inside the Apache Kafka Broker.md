@@ -22,7 +22,15 @@ The functions within a Kafka cluster are broken up into a data plane and a contr
 
 #### Record Batching
 
+![[Pasted image 20230930113853.png]]
+
 the producer will accumulate the records assigned to a given partition into batches.
+
+![[Pasted image 20230930114005.png]]
+
+The producer also has control as to when the record batch should be drained and sent to the broker.
+
+
 
 ----
 ##### Reference

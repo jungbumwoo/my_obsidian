@@ -48,6 +48,9 @@ Next, a thread from the I/O thread pool will pick up the request from the queue.
 
 ![[Pasted image 20230930115710.png]]
 
+On disk, the commit log is organized as a collection of segments. Each segment is made up of several files. One of these, a `.log` file, contains the event data. A second, a `.index` file, contains an index structure, which maps from a record offset to the position of that record in the `.log` file.
+
+#### Purgatory Holds Requests Until Replicated
 
 ----
 ##### Reference

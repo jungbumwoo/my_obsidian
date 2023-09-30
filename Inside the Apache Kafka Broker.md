@@ -17,7 +17,12 @@ The functions within a Kafka cluster are broken up into a data plane and a contr
 #### Partition Assignment
 
 - configurable partitioner to determine the topic partition to assign to the record. 
-- If the record has a key, then the default partitioner will use a hash of the key to determine the correct partition. After that, any records with the same key will always be assigned to the same partition. If the record has no key then a partition strategy is used to balance the data in the partitions.
+- If the record has a key, then the default partitioner will use a hash of the key to determine the correct partition. Any records with the same key will always be assigned to the same partition. 
+- If the record has no key then a partition strategy is used to balance the data in the partitions.
+
+#### Record Batching
+
+the producer will accumulate the records assigned to a given partition into batches.
 
 ----
 ##### Reference

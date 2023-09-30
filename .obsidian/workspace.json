@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3ddc984da3381e9b",
+        "id": "004820fd008d574b",
         "type": "tabs",
         "children": [
           {
-            "id": "84cc190403da8ee7",
+            "id": "d57e4140a6765422",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Inside the Apache Kafka Broker.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -65,7 +61,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inside the Apache Kafka Broker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inside the Apache Kafka Broker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Inside the Apache Kafka Broker.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,12 +139,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "84cc190403da8ee7",
+  "active": "d57e4140a6765422",
   "lastOpenFiles": [
+    "2023-09-30.md",
+    "무제 파일 2.canvas",
+    "무제 파일 1.canvas",
+    "무제 파일.canvas",
+    "Inside the Apache Kafka Broker.md",
     "my_obsidian",
     "The Fundamentals.md",
     "images/Pasted image 20230928235549.png",
-    "Inside the Apache Kafka Broker.md",
     "images",
     "images/Pasted image 20230930092042.png",
     "images/Pasted image 20230929231914.png",

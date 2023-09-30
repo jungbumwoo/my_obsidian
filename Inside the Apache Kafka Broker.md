@@ -32,6 +32,16 @@ The producer also has control as to when the record batch should be drained and 
 
 One is by time. The other is by size.
 
+#### Network Thread Adds Request to Queue
+
+![[Pasted image 20230930115200.png]]
+
+The request first lands in the broker’s socket receive buffer where it will be picked up by a network thread from the pool. That network thread will handle that particular client request through the rest of its lifecycle. The network thread will read the data from the socket buffer, form it into a produce request object, and add it to the request queue.
+
+#### I/O Thread Verifies and Stores the Batch
+
+![[Pasted image 20230930115551.png]]
+
 ----
 ##### Reference
 https://developer.confluent.io/courses/architecture/broker/

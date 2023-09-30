@@ -30,7 +30,7 @@ the producer will accumulate the records assigned to a given partition into batc
 
 The producer also has control as to when the record batch should be drained and sent to the broker.
 
-
+One is by time. The other is by size.
 
 ----
 ##### Reference

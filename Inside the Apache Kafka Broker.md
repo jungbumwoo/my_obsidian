@@ -42,6 +42,13 @@ The request first lands in the broker’s socket receive buffer where it will be
 
 ![[Pasted image 20230930115551.png]]
 
+Next, a thread from the I/O thread pool will pick up the request from the queue. The I/O thread will perform some validations, including a CRC check of the data in the request. It will then append the data to the physical data structure of the partition, which is called a commit log.
+
+#### Kafka Physical Storage
+
+![[Pasted image 20230930115710.png]]
+
+
 ----
 ##### Reference
 https://developer.confluent.io/courses/architecture/broker/

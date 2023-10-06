@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inside the Apache Kafka Broker.md",
+                "file": "kafka/Inside the Apache Kafka Broker.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "language/golang/Test.md",
+                "file": "kafka/Inside the Apache Kafka Broker.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "language/golang/Test.md",
+                "file": "kafka/Inside the Apache Kafka Broker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "language/golang/Test.md",
+                "file": "kafka/Inside the Apache Kafka Broker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "language/golang/Test.md"
+                "file": "kafka/Inside the Apache Kafka Broker.md"
               }
             }
           }
@@ -159,12 +159,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "9e0aeb581ea21896",
+  "active": "4ce557b7034ce5cf",
   "lastOpenFiles": [
-    "Inside the Apache Kafka Broker.md",
+    "kafka",
     "language/golang/Test.md",
+    "kafka/Inside the Apache Kafka Broker.md",
     "language/golang",
-    "무제 폴더",
     "language",
     "metrics/Monitoring.md",
     "metrics",
@@ -179,7 +179,7 @@
     "2023-09-30.md",
     "무제 파일 2.canvas",
     "my_obsidian",
-    "The Fundamentals.md",
+    "kafka/The Fundamentals.md",
     "images/Pasted image 20230928235549.png",
     "images",
     "images/Pasted image 20230930092042.png",

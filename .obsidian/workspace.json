@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "metrics/Monitoring.md",
+                "file": "Inside the Apache Kafka Broker.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "metrics/Monitoring.md",
+                "file": "Inside the Apache Kafka Broker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "metrics/Monitoring.md",
+                "file": "Inside the Apache Kafka Broker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "metrics/Monitoring.md"
+                "file": "Inside the Apache Kafka Broker.md"
               }
             }
           }
@@ -159,11 +159,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4ce557b7034ce5cf",
+  "active": "9e0aeb581ea21896",
   "lastOpenFiles": [
+    "metrics/Monitoring.md",
     "metrics",
     "Inside the Apache Kafka Broker.md",
-    "metrics/Monitoring.md",
     "Pasted image 20231002000035.png",
     "Pasted image 20230930115710.png",
     "Pasted image 20230930115551.png",

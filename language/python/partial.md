@@ -26,6 +26,13 @@ def my_func(a, b, *args, k1, k2, **kwargs):
 f = partial(my_func, 10, k1='a')
 
 f(20, 30, 40, k2='b', k3='c') 
-# 10 20 (30, 40) a b
+# 10 20 (30, 40) a b {'k3': 'c'}
 
+# same thing using regular func
+
+def f(b, *args, k2, **kwargs):
+    return my_func(10, b, *args, k1='a', k2=k2, **kwargs)
+
+f(20, 30, 40, k2='b', k3='c')
 ```
+

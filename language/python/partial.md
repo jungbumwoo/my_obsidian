@@ -84,4 +84,16 @@ We tend to use partials in situation where we need to call a function that actua
 
 Often this is because we are working with exiting libraries or code, and we have a special case.
 
+For example, suppose we have points (represented as tuples), and we want to sort them based on the distance of the point from some other fixed point.
+
+```python
+origin = (0, 0)
+
+l = [(1,1), (0, 2), (-3, 2), (0,0), (10, 10)]
+sorted(l) # [(-3, 2), (0, 0), (0, 2) ...]  but, I want to sort by distance
+
+
+
+
+```
 

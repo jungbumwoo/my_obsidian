@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "language/python/partial.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "f7e849a7afcb6a5c",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "language/python/partial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "language/python/partial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md"
+                "file": "language/python/partial.md"
               }
             }
           }
@@ -159,11 +159,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4ce557b7034ce5cf",
+  "active": "9e0aeb581ea21896",
   "lastOpenFiles": [
-    "kafka",
     "language/golang/Test.md",
+    "language/python/partial.md",
     "kafka/Inside the Apache Kafka Broker.md",
+    "language/python",
+    "kafka",
     "language/golang",
     "language",
     "metrics/Monitoring.md",

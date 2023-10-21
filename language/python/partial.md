@@ -1,4 +1,10 @@
 
+Return a new [partial object](https://docs.python.org/3/library/functools.html#partial-objects) which when called will behave like _func_ called with the positional arguments _args_ and keyword arguments _keywords_.
+
+
+
+
+
 ```python
 from functools import partialc
 
@@ -36,7 +42,7 @@ def f(b, *args, k2, **kwargs):
 f(20, 30, 40, k2='b', k3='c')
 ```
 
-### Caveat
+## Caveat
 
 ```python
 def my_func(a, b, c):
@@ -52,3 +58,17 @@ f(20, 30)  # 10 20 30   a != 100
 
 the value for **a** is fixed once the partial has been created.
 In fact, the memory address of **a** is baked in to the partial, and **a** is immutable.
+
+```python
+a = [10, 20]
+f = partial(my_func, a)
+
+f(100, 200)  # [10, 20] 100 200
+
+a.append(30)
+
+f(100, 200) # [10, 20, 30] 100 200
+```
+
+##
+

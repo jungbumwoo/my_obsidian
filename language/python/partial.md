@@ -92,6 +92,14 @@ origin = (0, 0)
 l = [(1,1), (0, 2), (-3, 2), (0,0), (10, 10)]
 sorted(l) # [(-3, 2), (0, 0), (0, 2) ...]  but, I want to sort by distance
 
+dist2 = lambda x, y: (x[0]-y[0])**2 + (x[1]-y[1])**2
+dist2((1, 1), origin) # 2
+
+sorted(l, key=?) # key is what key needs to be a function that takes in a single parameter
+sorted(l, key=dists2(end, origin)) # not work. this is function call. not func. key has to be callable. func.
+
+# how to solve?
+# sorted(l, key=dist_from_origin)
 
 
 

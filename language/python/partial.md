@@ -78,5 +78,10 @@ a.append(30)
 f(100, 200) # [10, 20, 30] 100 200
 ```
 
-##
+## Use Case
+
+We tend to use partials in situation where we need to call a function that actually requires more parameters than we can supply.
+
+Often this is because we are working with exiting libraries or code, and we have a special case.
+
 

@@ -102,5 +102,14 @@ f((1, 1)) # 2
 
 sorted(l, key=f)
 
+# using lambda 
+f = lambda x: dist2(origin, x)
+sorted(l, key=f)  # same thing
+sorted(l, key=lambda x: dist2(origin, x))  # same thing
+sorted(l, key=partial(dist2, origin))  # same thing
+
 ```
+
+
+
 

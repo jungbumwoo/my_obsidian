@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "language/python/partial.md",
+                "file": "language/python/Class and Static Methods.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "language/python/partial.md",
+                "file": "language/python/Class and Static Methods.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "language/python/partial.md",
+                "file": "language/python/Class and Static Methods.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "language/python/partial.md"
+                "file": "language/python/Class and Static Methods.md"
               }
             }
           }
@@ -161,8 +161,9 @@
   },
   "active": "9e0aeb581ea21896",
   "lastOpenFiles": [
-    "language/golang/Test.md",
     "language/python/partial.md",
+    "language/python/Class and Static Methods.md",
+    "language/golang/Test.md",
     "kafka/Inside the Apache Kafka Broker.md",
     "language/python",
     "kafka",

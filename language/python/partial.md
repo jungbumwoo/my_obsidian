@@ -36,3 +36,19 @@ def f(b, *args, k2, **kwargs):
 f(20, 30, 40, k2='b', k3='c')
 ```
 
+### Caveat
+
+```python
+def my_func(a, b, c):
+    print(a, b, c)
+
+a = 10
+f = partial(my_func, a)
+
+f(20, 30)  # 10 20 30
+a = 100
+f(20, 30)  # 10 20 30   a != 100
+```
+
+the value for **a** is fixed once the partial has been created.
+In fact, the memory address of **a** is baked in to the partial, and **a** is immutable.

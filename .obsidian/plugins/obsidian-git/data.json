@@ -1,6 +1,6 @@
 {
-  "commitMessage": "ㅑvault backup: {{date}}",
-  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "commitMessage": "imac - vault backup: {{date}}",
+  "commitDateFormat": "YY-MM-DD HH:mm",
   "autoSaveInterval": 5,
   "autoPushInterval": 5,
   "autoPullInterval": 1,

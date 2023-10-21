@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
-                "mode": "preview",
+                "file": "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 421.5
   },
   "right": {
     "id": "f7e849a7afcb6a5c",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md"
+                "file": "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md"
               }
             }
           }
@@ -161,11 +161,15 @@
   },
   "active": "9e0aeb581ea21896",
   "lastOpenFiles": [
+    "kafka/The Definitive Guide_v2/Table of Contents.md",
+    "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md",
+    "kafka/The Definitive Guide_v2/123123.md",
+    "kafka/Inside the Apache Kafka Broker.md",
+    "kafka/The Definitive Guide_v2",
     "kafka/The Fundamentals.md",
     "language/python/partial.md",
     "language/python/Class and Static Methods.md",
     "language/golang/Test.md",
-    "kafka/Inside the Apache Kafka Broker.md",
     "language/python",
     "kafka",
     "language/golang",

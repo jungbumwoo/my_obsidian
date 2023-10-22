@@ -18,4 +18,5 @@
 - A topic with a retention policy of 30 days can store older data if all the data fits into a single segment in each partition.
 - The deleteRecords method will mark as deleted all the records with offsets older than those specified when calling the method and make them inaccessible by Kafka consumers.
 
-기한 설정이 되어 있다고 해서 바로 이전 데이터가 지워지는게 아니라ㅣ s
+기한 설정이 되어 있다고 해서 바로 이전 데이터가 지워지는게 아니라 지우지 말아야할 segment에 record가 같이 있는 경우, 삭제는 안되어있으니 접근은 못하게 마킹한다는 내용으로 보임.
+

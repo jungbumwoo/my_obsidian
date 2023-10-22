@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md",
+                "file": "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md",
+                "file": "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md",
+                "file": "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md"
+                "file": "kafka/The Definitive Guide_v2/6. Kafka Internals.md"
               }
             }
           }
@@ -162,7 +162,9 @@
   "active": "9e0aeb581ea21896",
   "lastOpenFiles": [
     "kafka/The Definitive Guide_v2/Table of Contents.md",
-    "kafka/The Definitive Guide_v2/Chap 5. Managing Apache Kafka Programmatically.md",
+    "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
+    "kafka/The Definitive Guide_v2/5. Managing Apache Kafka Programmatically.md",
+    "5. Managing Apache Kafka Programmatically.md",
     "kafka/The Definitive Guide_v2/123123.md",
     "kafka/Inside the Apache Kafka Broker.md",
     "kafka/The Definitive Guide_v2",

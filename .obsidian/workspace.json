@@ -20,19 +20,41 @@
             }
           },
           {
-            "id": "9e0aeb581ea21896",
+            "id": "a139f916343ec473",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
+          },
+          {
+            "id": "b9894f9caec226e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "kafka/The Fundamentals.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5d9a3df74a0a2594",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -146,8 +168,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,16 +180,19 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4ce557b7034ce5cf",
+  "active": "5d9a3df74a0a2594",
   "lastOpenFiles": [
+    "kafka/The Fundamentals.md",
+    "conflict-files-obsidian-git.md",
+    "kafka/Inside the Apache Kafka Broker.md",
+    "metrics/Monitoring.md",
+    "language/python/Class and Static Methods.md",
     "language/python/partial.md",
     "language/python",
     "kafka",
     "language/golang/Test.md",
-    "kafka/Inside the Apache Kafka Broker.md",
     "language/golang",
     "language",
-    "metrics/Monitoring.md",
     "metrics",
     "Pasted image 20231002000035.png",
     "Pasted image 20230930115710.png",
@@ -181,7 +205,6 @@
     "2023-09-30.md",
     "무제 파일 2.canvas",
     "my_obsidian",
-    "kafka/The Fundamentals.md",
     "images/Pasted image 20230928235549.png",
     "images",
     "images/Pasted image 20230930092042.png",

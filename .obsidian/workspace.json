@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
+                "file": "kafka/The Definitive Guide_v2/Table of Contents.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
+                "file": "kafka/The Definitive Guide_v2/Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
+                "file": "kafka/The Definitive Guide_v2/Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kafka/The Definitive Guide_v2/6. Kafka Internals.md"
+                "file": "kafka/The Definitive Guide_v2/Table of Contents.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "9e0aeb581ea21896",
   "lastOpenFiles": [
-    "kafka/The Definitive Guide_v2/5. Managing Apache Kafka Programmatically.md",
     "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
+    "kafka/The Definitive Guide_v2/5. Managing Apache Kafka Programmatically.md",
     "Pasted image 20230930114005.png",
     "Pasted image 20230930115200.png",
     "Pasted image 20230930113853.png",

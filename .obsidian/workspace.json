@@ -94,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 421.5
+    "width": 324.5
   },
   "right": {
     "id": "f7e849a7afcb6a5c",
@@ -171,7 +171,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "be8ae7341535bfec",
+  "active": "4ce557b7034ce5cf",
   "lastOpenFiles": [
     "kafka/The Fundamentals.md",
     "kafka/exactly once.md",

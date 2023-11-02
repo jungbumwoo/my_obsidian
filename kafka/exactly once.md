@@ -18,4 +18,4 @@ Kafka can tolerate _n-1_ broker failures, meaning that a partition is availabl
 1 .**The producer-to-broker RPC can fail**
 2. **The producer-to-broker RPC can fail**
 -  Since there is no way for the producer to know the nature of the failure, it is forced to assume that the message was not written successfully and to retry it. In some cases, this will cause the same message to be duplicated in the Kafka partition log, causing the end consumer to receive it more than once.
-3. 
+3. **The client can fail**

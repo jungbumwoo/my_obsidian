@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "language/golang/Test.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "language/golang/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "file": "language/golang/Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kafka/Inside the Apache Kafka Broker.md"
+                "file": "language/golang/Test.md"
               }
             }
           }
@@ -173,10 +173,10 @@
   },
   "active": "be8ae7341535bfec",
   "lastOpenFiles": [
+    "kafka/Inside the Apache Kafka Broker.md",
     "Pasted image 20231104102037.png",
     "kafka/The Fundamentals.md",
     "kafka/exactly once.md",
-    "kafka/Inside the Apache Kafka Broker.md",
     "kafka/The Definitive Guide_v2/Table of Contents.md",
     "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
     "kafka/The Definitive Guide_v2/5. Managing Apache Kafka Programmatically.md",
@@ -206,7 +206,6 @@
     "images/Pasted image 20230928235549.png",
     "images",
     "images/Pasted image 20230930092042.png",
-    "images/Pasted image 20230929231914.png",
-    "images/Pasted image 20230929000033.png"
+    "images/Pasted image 20230929231914.png"
   ]
 }

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "language/golang/Test.md",
+                "file": "language/golang/structure.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "language/golang/Test.md",
+                "file": "language/golang/structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "language/golang/Test.md",
+                "file": "language/golang/structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "language/golang/Test.md"
+                "file": "language/golang/structure.md"
               }
             }
           }
@@ -173,6 +173,8 @@
   },
   "active": "be8ae7341535bfec",
   "lastOpenFiles": [
+    "language/golang/Test.md",
+    "language/golang/structure.md",
     "kafka/Inside the Apache Kafka Broker.md",
     "Pasted image 20231104102037.png",
     "kafka/The Fundamentals.md",
@@ -191,7 +193,6 @@
     "kafka/The Definitive Guide_v2",
     "language/python/partial.md",
     "language/python/Class and Static Methods.md",
-    "language/golang/Test.md",
     "language/python",
     "kafka",
     "language/golang",

@@ -55,6 +55,10 @@ On disk, the commit log is organized as a collection of segments. Each segment i
 ![[Pasted image 20231002000035.png]]
 
 
+#### Response Added to Socket
+
+![[Pasted image 20231104102037.png]]
+
 
 ----
 ##### Reference

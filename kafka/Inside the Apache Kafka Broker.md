@@ -56,6 +56,9 @@ On disk, the commit log is organized as a collection of segments. Each segment i
 
 
 
+prev : [[The Fundamentals]]
+next: [[Data Plane_Replication Protocol]]
+
 ----
 ##### Reference
 https://developer.confluent.io/courses/architecture/broker/

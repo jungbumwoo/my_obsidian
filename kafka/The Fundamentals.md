@@ -19,3 +19,7 @@ Topics are append-only, immutable logs of events
 ### Kafka Topic Partitions
 
 ![[Pasted image 20230929000033.png]]
+
+
+
+next: [[Inside the Apache Kafka Broker]]

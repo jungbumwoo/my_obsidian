@@ -8,31 +8,135 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ef620811d6751745",
+            "id": "be97a311857db51f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "4c9a5f5c3c4c10e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "kafka/Inside the Apache Kafka Broker.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "be97a311857db51f",
+            "id": "a9c9f20c42e35d34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "dev/git.md",
                 "mode": "source",
-                "source": true
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "33749581bfe81c67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48af6aa3930a4709",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/Inside the Apache Kafka Broker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "00cfaf5d458e0e22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/Data Plane_Replication Protocol.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5eee59e1e1fb33e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/Data Plane_Replication Protocol.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "92a6b2f4a3433061",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/Data Plane_Replication Protocol.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0dce1eab073bdd35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/Data Plane_Replication Protocol.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0d3763551066f60a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/Data Plane_Replication Protocol.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "41d8f1ee6fa59ee0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "kafka/The Fundamentals.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -98,7 +202,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "kafka/The Fundamentals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +219,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "conflict-files-obsidian-git.md",
+                "file": "kafka/The Fundamentals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +242,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "kafka/The Fundamentals.md"
               }
             }
           }
@@ -158,19 +262,28 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "be97a311857db51f",
+  "active": "41d8f1ee6fa59ee0",
   "lastOpenFiles": [
-    "kafka/The Definitive Guide_v2/5. Managing Apache Kafka Programmatically.md",
-    "language/golang/Go Structure.md",
+    "Pasted image 20231105170115.png",
+    "kafka/Pasted image 20231105170115.png",
     "dev/git.md",
-    "kafka/Inside the Apache Kafka Broker.md",
-    "kafka/The Fundamentals.md",
-    "metrics/Monitoring.md",
+    "kafka/Data Plane_Replication Protocol.md",
     "conflict-files-obsidian-git.md",
-    "language/golang/Test.md",
-    "dev",
+    "Pasted image 20231105170620.png",
+    "Pasted image 20231105170539.png",
+    "kafka/The Fundamentals.md",
+    "kafka/Inside the Apache Kafka Broker.md",
+    "Pasted image 20231105162452.png",
     "kafka/The Definitive Guide_v2/Table of Contents.md",
+    "Pasted image 20231105162116.png",
     "kafka/The Definitive Guide_v2/6. Kafka Internals.md",
+    "language/golang/Test.md",
+    "language/golang/Go Structure.md",
+    "Pasted image 20230930114005.png",
+    "Pasted image 20230930113853.png",
+    "kafka/The Definitive Guide_v2/5. Managing Apache Kafka Programmatically.md",
+    "metrics/Monitoring.md",
+    "dev",
     "kafka/The Definitive Guide_v2",
     "language/python/Class and Static Methods.md",
     "language/python/partial.md",
@@ -182,18 +295,11 @@
     "Pasted image 20231002000035.png",
     "Pasted image 20230930115710.png",
     "Pasted image 20230930115551.png",
-    "Pasted image 20230930115200.png",
-    "Pasted image 20230930114005.png",
-    "Pasted image 20230930113853.png",
     "무제 파일 1.canvas",
     "무제 파일.canvas",
     "2023-09-30.md",
     "무제 파일 2.canvas",
     "my_obsidian",
-    "images/Pasted image 20230928235549.png",
-    "images",
-    "images/Pasted image 20230930092042.png",
-    "images/Pasted image 20230929231914.png",
-    "images/Pasted image 20230929000033.png"
+    "images"
   ]
 }

@@ -25,9 +25,41 @@ Whenever the leader appends new data into its local log, the followers will issu
 
 ![[Pasted image 20231105170620.png]]
 
-The leader will respond to the fetch request with the records starting at the specified offset. The fetch response will also include the offset for each record and the current leader epoch. The followers will then append those records to their own local logs.
+- The leader will respond to the fetch request with the records starting at the specified offset. 
+- current epoch is fetched too.
 
-----
+### Committing Partition Offsets
+
+![[Pasted image 20231105225205.png]]
+
+- leader manage high watermark by fetch request offsets
+
+### Advancing the Follower High Watermark
+
+![[Pasted image 20231105231958.png]]
+
+- The leader, in turn, uses the fetch response to inform followers of the current high watermark. 
+- Because this process is asynchronous, **the followers’ high watermark will typically lag behind the actual high watermark** held by the leader.
+
+### Handling Leader Failure
+![[Pasted image 20231105233619.png]]
+
+### Temporary Decreased High Watermark
+![[Pasted image 20231105233654.png]]
+
+### Partition Replica Reconciliation
+
+![[Pasted image 20231105233544.png]]
+
+All of the controller brokers maintain an in-memory metadata cache that is kept up to date, so that any controller can take over as the active controller if needed.
+
+
+### KRaft Cluster Metadata
+
+
+
+
+------
 
 prev: [[Inside the Apache Kafka Broker]]
 

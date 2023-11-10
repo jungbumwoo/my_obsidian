@@ -55,6 +55,15 @@ On disk, the commit log is organized as a collection of segments. Each segment i
 ![[Pasted image 20231002000035.png]]
 
 
+#### Response Added to Socket
+
+![[Pasted image 20231104102037.png]]
+
+
+### The Fetch Request
+
+it would be inefficient to send a response with every record fetched, or even worse, when there are no records available. To be more efficient, consumers can be configured to wait for a minimum number of bytes of data, or to wait for a maximum amount of time before returning a response to a fetch request. While waiting for these criteria to be met, the fetch request is sent to purgatory.
+
 
 prev : [[The Fundamentals]]
 next: [[Data Plane_Replication Protocol]]

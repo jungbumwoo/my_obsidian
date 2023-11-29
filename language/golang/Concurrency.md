@@ -39,7 +39,26 @@ func main() {
 
 ### Buffered Channels
 
-Channels can be _buffered_. Provide the buffer length as the second argument to `make` to initialize a buffered channel
+Channels can be _buffered_. Provide the buffer length as the second argument to `make` to initialize a buffered channel.
+
+Sends to a buffered channel block only when the buffer is full.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	ch := make(chan int, 2)
+	ch <- 1
+	ch <- 2
+	ch <- 3  // fatal error: all goroutines are asleep - deadlock!
+	fmt.Println(<-ch)
+	fmt.Println(<-ch)
+}
+
+```
+
 
 
 ```go

@@ -1,7 +1,13 @@
 
 ## Goroutines
 
+A _goroutine_ is a lightweight thread managed by the Go runtime.
 
+## Channels
+
+Channels are a typed conduit through which you can send and receive values with the channel operator, `<-`.
+
+By default, sends and receives block until the other side is ready. This allows goroutines to synchronize without explicit locks or condition variables.
 
 
 ```go

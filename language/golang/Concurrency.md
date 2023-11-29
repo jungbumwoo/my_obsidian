@@ -37,6 +37,9 @@ func main() {
 ```
 
 
+### Buffered Channels
+
+Channels can be _buffered_. Provide the buffer length as the second argument to `make` to initialize a buffered channel
 
 
 ```go

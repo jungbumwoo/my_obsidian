@@ -30,7 +30,8 @@ func main() {
 	go sum(s[len(s)/2:], c)
 	x, y := <-c, <-c // receive from c
 
-	fmt.Println(x, y, x+y)  // -5, 17, 12 - why alwalys print this result? I thought (17, -5, 12) is possible.
+	fmt.Println(x, y, x+y)  // -5, 17, 12 - why alwalys print this result? I thought (17, -5, 12) is possible. 
+	// -> for i := 100 fail. for i := 10000 success. I got different result.
 }
 
 ```

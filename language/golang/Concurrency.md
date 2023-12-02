@@ -114,3 +114,5 @@ The loop `for i := range c` receives values from the channel repeatedly until 
 
 **Another note:** Channels aren't like files; you don't usually need to close them. Closing is only necessary when the receiver must be told there are no more values coming, such as to terminate a `range` loop.
 
+### Select
+

@@ -153,3 +153,6 @@ func main() {
 
 ### Default Selection
 
+The `default` case in a `select` is run if no other case is ready.
+Use a `default` case to try a send or receive without blocking.
+

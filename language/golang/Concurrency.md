@@ -93,7 +93,7 @@ func main() {
 		}
 		fmt.Println(i)
 	}
-	cancel() 
+	cancel()
 }
 
 ```

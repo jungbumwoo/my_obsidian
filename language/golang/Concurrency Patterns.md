@@ -1,4 +1,63 @@
 
+
+#### Fan - In
+![[Pasted image 20231214221556.png]]
+
+```go
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+/*
+Multiplexing. the Fan-in pattern.
+
+At generator.go, Joe and Ann count in lockstep.
+We can instead use a fan-in function to let whosoever is ready talk.
+*/
+func fanIn(input1, input2 <-chan string) <-chan string {
+	c := make(chan string)
+	go func() {
+		for {
+			c <- <-input1
+		}
+	}()
+	go func() {
+		for {
+			c <- <-input2
+		}
+	}()
+	return c
+}
+
+func boring(msg string) <-chan string { // Returns received-only channel of strings
+	c := make(chan string)
+	go func() {
+		for i := 0; ; i++ {
+			c <- fmt.Sprintf("%s %d", msg, i) // Expression to be sent can be any suitable value.
+			time.Sleep(time.Duration(rand.Intn(1e3)) * time.Millisecond)
+		}
+	}()
+	return c // Return the channel to the caller.
+}
+
+func main() {
+	joe := boring("I have a sore sore throat")
+	ann := boring("Ann")
+
+	c := fanIn(joe, ann)
+	for i := 0; i < 10; i++ {
+		fmt.Println(<-c)
+	}
+	fmt.Println("You're boring; I'm leaving.")
+}
+
+
+```
+
 ####  Daisy Chain
 ```go
 package main

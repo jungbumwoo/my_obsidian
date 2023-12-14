@@ -1,6 +1,55 @@
 
+### Generator
 
-#### Fan - In
+Generator: function that returns a channel
+```go
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+// Generator: function that returns a channel
+func boring(msg string) <-chan string { // Returns received-only channel of strings
+	c := make(chan string)
+	go func() {
+		for i := 0; ; i++ {
+			c <- fmt.Sprintf("%s %d", msg, i) // Expression to be sent can be any suitable value.
+			time.Sleep(time.Duration(rand.Intn(1e3)) * time.Millisecond)
+		}
+	}()
+	return c // Return the channel to the caller.
+}
+
+func main() {
+	joe := boring("I have a sore sore throat")
+	ann := boring("Ann")
+	for i := 0; i < 5; i++ {
+		fmt.Println(<-joe)
+		fmt.Println(<-ann)
+	}
+	fmt.Println("You're boring; I'm leaving.")
+}
+
+/*
+I have a sore sore throat 0
+Ann 0
+I have a sore sore throat 1
+Ann 1
+I have a sore sore throat 2
+Ann 2
+I have a sore sore throat 3
+Ann 3
+I have a sore sore throat 4
+Ann 4
+You're boring; I'm leaving.
+*/
+
+```
+
+### Fan - In
 ![[Pasted image 20231214221556.png]]
 
 ```go
@@ -58,7 +107,14 @@ func main() {
 
 ```
 
-####  Daisy Chain
+### Restore sqeuece
+외부에서 순서를 저렇게 조절하는게 인상적임.
+custom type 으로 messge 주고 받고 순서를 조절함
+
+
+
+
+###  Daisy Chain
 ```go
 package main
 import "fmt"
@@ -87,7 +143,7 @@ func main() {
 ```
 
 
-#### Search server example
+### Search server example
 ```go
 package main
 
@@ -164,7 +220,7 @@ func main() {
 
 ```
 
-#### Search Server Example 2
+### Search Server Example 2
 ```go
 
 /*
@@ -195,7 +251,7 @@ func main() {
 ```
 
 
-#### Google Search 3.0
+### Google Search 3.0
 ```go
 
 ```

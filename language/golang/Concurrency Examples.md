@@ -3,8 +3,8 @@
 package main
 import "fmt"
 
-
-// 채널로 기차놀이하는 것 같네..
+// Daisy chain
+// 채널로 기차놀이하는 것 같네
 func f(left, right chan int) {
 	left <- 1 + <-right
 }

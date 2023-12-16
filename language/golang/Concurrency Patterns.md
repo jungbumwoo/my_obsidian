@@ -103,8 +103,6 @@ func main() {
 	}
 	fmt.Println("You're boring; I'm leaving.")
 }
-
-
 ```
 
 ### Restore sqeuece
@@ -216,8 +214,6 @@ func main() {
 	fmt.Println(results)
 	fmt.Println(elapsed)
 }
-
-
 ```
 
 ### Search Server Example 2

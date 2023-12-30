@@ -6,6 +6,22 @@ By default, `TCP` uses Nagle’s algorithm to collect small outgoing packets t
 
 게임과 같이 반응 속도가 중요한 경우, Nagle 알고리즘을 쓰지 않는다.
 
+
+```
+**if** there is new data to send **then**
+    **if** the window size ≥ MSS **and** available data is ≥ MSS **then**
+        send complete MSS segment now
+    **else**
+        **if** there is unconfirmed data still in the pipe **then** // ack 가 왔으면 buffer에 있는거 바로 보내고 ack가 안왔으면 buffer로 들어간다는 의미인듯.
+            enqueue data in the buffer until an acknowledge is received
+        **else**
+            send data immediately
+        **end if**
+    **end if**
+**end if**
+```
+
+
  If a process is causing many small packets to be transmitted, it may be creating undue network congestion.
 
 these small segments are collected from TCP buffer and sent in a single segment when acknowledgment arrives. So, the faster the acknowledgment comes back, the faster the data is sent.
@@ -20,6 +36,11 @@ Delayed ACK is the destination retaining the ACK segment for the value of the de
 ## Nagle's Algorithm and Delayed ACK Do Not Play Well Together in a TCP/IP Network
 
 Delayed ACKs can help in certain circumstances, such as when using the character echo option in Telnet. If the ACKs are tiny and don't use much bandwidth then Delayed ACK is not of much help
+
+
+### 아직 덜 이해된 부분
+
+- The user-level solution is to avoid write–write–read sequences on sockets. Write–read–write–read is fine. Write–write–write is fine. But write–write–read is a killer. So, if you can, buffer up your little writes to TCP and send them all at once. Using the standard UNIX I/O package and flushing write before each read usually works. (wiki)
 
 
 https://en.wikipedia.org/wiki/Nagle%27s_algorithm

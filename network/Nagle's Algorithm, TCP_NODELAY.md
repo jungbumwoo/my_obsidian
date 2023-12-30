@@ -38,6 +38,11 @@ Delayed ACK is the destination retaining the ACK segment for the value of the de
 Delayed ACKs can help in certain circumstances, such as when using the character echo option in Telnet. If the ACKs are tiny and don't use much bandwidth then Delayed ACK is not of much help
 
 
+### Solution
+
+TCP implementations usually provide applications with an interface to disable the Nagle algorithm. This is typically called the `TCP_NODELAY` option.
+
+
 ### 아직 덜 이해된 부분
 
 - The user-level solution is to avoid write–write–read sequences on sockets. Write–read–write–read is fine. Write–write–write is fine. But write–write–read is a killer. So, if you can, buffer up your little writes to TCP and send them all at once. Using the standard UNIX I/O package and flushing write before each read usually works. (wiki)

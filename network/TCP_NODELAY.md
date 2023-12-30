@@ -8,3 +8,4 @@ By default, `TCP` uses Nagle’s algorithm to collect small outgoing packets t
  If a process is causing many small packets to be transmitted, it may be creating undue network congestion
 
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/assembly_improving-network-latency-using-tcp_nodelay_optimizing-rhel8-for-real-time-for-low-latency-operation
+

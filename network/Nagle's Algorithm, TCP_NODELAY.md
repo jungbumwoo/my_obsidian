@@ -44,12 +44,18 @@ TCP implementations usually provide applications with an interface to disable th
 
 The interface for disabling delayed ACK is not consistent among systems.
 
-delayed ACK(지연된 ACK)를 비활성화하는 방법이 다양한 시스템 간에 통일성이 없다는 것을 나타냅니다. 서로 다른 운영 체제나 네트워크 시스템에서는 delayed ACK를 비활성화하기 위한 설정이나 명령이 서로 다를 수 있어서, 특정 기능을 일관되게 비활성화하려면 각 시스템에 따라 다른 방법을 사용해야 함
+delayed ACK(지연된 ACK)를 비활성화하는 방법이 다양한 시스템 간에 통일성이 없음. 서로 다른 운영 체제나 네트워크 시스템에서는 delayed ACK를 비활성화하기 위한 설정이나 명령이 서로 다를 수 있어서, 특정 기능을 일관되게 비활성화하려면 각 시스템에 따라 다른 방법을 사용해야 함.
+
+socket 생성 시 옵션으로 nagle  algorithm을 사용하지 않는 것이 현실적
+
+
 
 ### 아직 덜 이해된 부분
 
 - The user-level solution is to avoid write–write–read sequences on sockets. Write–read–write–read is fine. Write–write–write is fine. But write–write–read is a killer. So, if you can, buffer up your little writes to TCP and send them all at once. Using the standard UNIX I/O package and flushing write before each read usually works. (wiki)
 
+
+위키가 명쾌했음. 돌고 돌아 다시 위키로 왔는데 위키가 정리를 잘 해두었음.
 
 https://en.wikipedia.org/wiki/Nagle%27s_algorithm
 

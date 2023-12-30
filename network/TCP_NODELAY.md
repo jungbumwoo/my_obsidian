@@ -24,3 +24,5 @@ Delayed ACKs can help in certain circumstances, such as when using the character
 https://www.extrahop.com/company/blog/2016/tcp-nodelay-nagle-quickack-best-practices/
 
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/assembly_improving-network-latency-using-tcp_nodelay_optimizing-rhel8-for-real-time-for-low-latency-operation
+
+https://iponwire.com/tcp-nagle-algorithm/

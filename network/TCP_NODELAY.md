@@ -7,7 +7,7 @@ By default, `TCP` uses Nagle’s algorithm to collect small outgoing packets t
 
  If a process is causing many small packets to be transmitted, it may be creating undue network congestion
 
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/assembly_improving-network-latency-using-tcp_nodelay_optimizing-rhel8-for-real-time-for-low-latency-operation
+
 
 
 
@@ -18,3 +18,9 @@ Delayed ACK is the destination retaining the ACK segment for the value of the de
 
 ### Nagle's Algorithm and Delayed ACK Do Not Play Well Together in a TCP/IP Network
 
+Delayed ACKs can help in certain circumstances, such as when using the character echo option in Telnet. If the ACKs are tiny and don't use much bandwidth then Delayed ACK is not of much help
+
+
+https://www.extrahop.com/company/blog/2016/tcp-nodelay-nagle-quickack-best-practices/
+
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/assembly_improving-network-latency-using-tcp_nodelay_optimizing-rhel8-for-real-time-for-low-latency-operation

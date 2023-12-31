@@ -59,6 +59,7 @@ socket 생성 시 옵션으로 nagle  algorithm을 사용하지 않는 것이 �
 
 https://en.wikipedia.org/wiki/Nagle%27s_algorithm
 
+
 https://www.extrahop.com/company/blog/2016/tcp-nodelay-nagle-quickack-best-practices/
 
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/assembly_improving-network-latency-using-tcp_nodelay_optimizing-rhel8-for-real-time-for-low-latency-operation

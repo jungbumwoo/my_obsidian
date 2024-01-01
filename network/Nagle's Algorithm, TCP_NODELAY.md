@@ -53,9 +53,11 @@ setsockopt(descriptor, SOL_TCP, TCP_NODELAY, &one, sizeof(one));
 응답 쪽 - delayed ACK
 The interface for disabling delayed ACK is not consistent among systems.
 
-delayed ACK(지연된 ACK)를 비활성화하는 방법이 다양한 시스템 간에 통일성이 없음. 서로 다른 운영 체제나 네트워크 시스템에서는 delayed ACK를 비활성화하기 위한 설정이나 명령이 서로 다를 수 있어서, 특정 기능을 일관되게 비활성화하려면 각 시스템에 따라 다른 방법을 사용해야 함.
+delayed ACK(지연된 ACK)를 비활성화하는 방법이 다양한 시스템 간에 통일성이 없음. 서로 다른 운영 체제나 네트워크 시스템에서는 delayed ACK를 비활성화하기 위한 설정이나 명령이 서로 다를 수 있어서, 특정 기능을 일관되게 비활성화하려면 각 시스템에 따라 다른 방법을 사용해야 함. linux 에서는 TCP_QUICKACK.
 
-socket 생성 시 옵션으로 nagle  algorithm을 사용하지 않는 것이 현실적
+socket 생성 시 옵션으로 nagle  algorithm을 사용하지 않는 것이 보다 편할 수 있음.
+
+
 
 
 

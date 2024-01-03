@@ -1,3 +1,5 @@
+Data plane : how to client request and replication is handle. 
+
 ## Kafka Data Replication
 
 ![[Pasted image 20231105162116.png]]

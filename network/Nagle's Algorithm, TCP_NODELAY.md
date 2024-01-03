@@ -76,3 +76,7 @@ https://www.extrahop.com/company/blog/2016/tcp-nodelay-nagle-quickack-best-pract
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/8/html/optimizing_rhel_8_for_real_time_for_low_latency_operation/assembly_improving-network-latency-using-tcp_nodelay_optimizing-rhel8-for-real-time-for-low-latency-operation
 
 https://iponwire.com/tcp-nagle-algorithm/
+
+https://jvns.ca/blog/2015/11/21/why-you-should-understand-a-little-about-tcp/
+
+https://gocardless.com/blog/in-search-of-performance-how-we-shaved-200ms-off-every-post-request/

@@ -249,5 +249,19 @@ func main() {
 
 ### Google Search 3.0
 ```go
+c := make(chan Result)
+go func() { c <- First(query, Web1, Web2) } ()
+go func() { c <- First(query, Image1, Image2) } ()
+go func() { c <- First(query, Vedio1, Video2) } ()
 
+timeout := time.After(80 * time.Millisecond)
+for i := 0; i < 3; i ++ {
+	select {
+	case result := <- c:
+		results = append(results, result)
+	case <- timeout:
+		fmt.Println("timed out")
+		return
+	}
+}
 ```

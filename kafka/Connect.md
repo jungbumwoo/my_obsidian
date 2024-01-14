@@ -10,6 +10,10 @@
 Converters are responsible for the serialization and deserialization of data flowing between Kafka Connect and Kafka itself.
 
 
+### Transforms
+
+
+
 ----
 
 https://developer.confluent.io/courses/kafka-connect/how-connectors-work/

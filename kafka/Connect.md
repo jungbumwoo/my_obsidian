@@ -11,7 +11,7 @@ Converters are responsible for the serialization and deserialization of data flo
 
 
 ### Transforms
-
+Unlike connectors and converters, these are entirely optional.
 
 
 ----

@@ -14,6 +14,9 @@ Converters are responsible for the serialization and deserialization of data flo
 Unlike connectors and converters, these are entirely optional.
 
 
+### Deploying Kafka Connect
+When we add a connector instance, we specify its logical configuration. It’s physically executed by a thread known as a task.
+
 ----
 
 https://developer.confluent.io/courses/kafka-connect/how-connectors-work/

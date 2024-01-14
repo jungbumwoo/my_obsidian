@@ -265,3 +265,11 @@ for i := 0; i < 3; i ++ {
 	}
 }
 ```
+
+
+---
+
+## Google I/O 2013 - Advanced Go Concurrency Patterns
+
+[](https://www.youtube.com/@GoogleDevelopers)
+

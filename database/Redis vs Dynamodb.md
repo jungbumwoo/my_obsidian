@@ -10,6 +10,7 @@ Redis (Remote Dictionary Server) is a fast, reliable, and open-source datastore 
 fast, robust, and reliable NoSQL databases
 
 ### **Scalability and Performance**
+Amazon DynamoDB is a NoSQL database service that offers automatic scaling and provides consistent single-digit millisecond latency even at scale. It can handle millions of requests per second and can effortlessly scale horizontally to support growing workloads. On the other hand, Amazon ElastiCache is an in-memory caching service that enhances the performance of web applications by retrieving frequently accessed data from a fast, in-memory cache rather than relying on slower disk-based databases. It improves application responsiveness and supports high throughput and low-latency read and write operations.
 
 ### **Managed vs Self-Managed Service**
 DynamoDB is a fully-managed service, meaning that AWS handles the administrative and maintenance tasks associated with database management, such as hardware provisioning, patching, backup, and scaling. On the other hand, ElastiCache is a self-managed service where users are responsible for the deployment, configuration, and maintenance of the caching environment.

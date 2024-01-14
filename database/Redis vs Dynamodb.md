@@ -8,3 +8,10 @@ Redis (Remote Dictionary Server) is a fast, reliable, and open-source datastore 
 ## Common Feature
 
 fast, robust, and reliable NoSQL databases
+
+### **Scalability and Performance**
+
+
+
+
+https://stackshare.io/stackups/amazon-dynamodb-vs-amazon-elasticache

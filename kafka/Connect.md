@@ -20,3 +20,5 @@ When we add a connector instance, we specify its logical configuration. It’s p
 ----
 
 https://developer.confluent.io/courses/kafka-connect/how-connectors-work/
+
+https://docs.confluent.io/platform/current/connect/devguide.html

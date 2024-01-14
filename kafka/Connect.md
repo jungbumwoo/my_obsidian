@@ -14,8 +14,12 @@ Converters are responsible for the serialization and deserialization of data flo
 Unlike connectors and converters, these are entirely optional.
 
 
-### Deploying Kafka Connect
-When we add a connector instance, we specify its logical configuration. It’s physically executed by a thread known as a task.
+### standalone mode vs distributed mode
+
+In standalone mode, Kafka Connect runs on a single _worker_
+In distributed mode, connectors and their tasks are balanced across multiple workers.
+
+
 
 ----
 

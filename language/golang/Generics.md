@@ -124,8 +124,17 @@ Constraint Type Inference - Deduce type arguments from type parameter constraint
 - General Purpose data structure.
 	- replacing an interface type with type parameter can often permit the data to be stored more efficiently.
 	- can avoid type assertions and can instead be fully type checked at complie time.
-	- When operating on type parameters, functionos to methods.
+	- When operating on type parameters, prefer functions to methods. (for general purpose data types, use fuctions rather than writing constraint that require method )
+- When a method looks the same for all types.
+	
+```go
+// example of (When a method looks the same for all types.)
 
+type SliceFn[T any] struct {
+	s []T
+	cmp func(T, T) bool
+}
+```
 
 ---
 

@@ -88,8 +88,19 @@ func ScaleAndPrint(p Point) {
 
 // Compiler error:
 // r.String undefined
-// (type []int32 has no field or method String)
+	// (type []int32 has no field or method String)
 
+```
+
+```go
+// All changed code is highlighted.
+func Scale[S ~[]E, E constraints.Integer](s S, sc E) S {
+	r := make(S, len(s))
+	for i, v := range s {
+		r[i] = v * c
+	}
+	return r
+}
 ```
 
 

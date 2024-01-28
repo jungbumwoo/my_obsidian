@@ -14,6 +14,14 @@ m := fmin(2.71, 3.14)
 // Instantiatioin produces a non-generic function.
 ```
 
+#### type paramenter
+a type parameter gives you the ability to parameterize a function or a type with types
+
+```go
+[P, Q constraint, R constraint]
+```
+Type parameter lists look like ordinary parameter lists with square brackets. It is customary to start type parameters with upper-case letters to emphasize that they are types.
+
 #### The types of type parameters
 
 ```go
@@ -164,7 +172,8 @@ func ReadFour[T io.Reader](r T) ([]byte, error)
 - When the operation is different for each type, even without a method.
 
 #### When are type parameters useful?
-
+##### Avoid boilerplate.
+정리 : don't use type parameters prematurely; wait until you are about to write boilerplate code.
 
 ---
 

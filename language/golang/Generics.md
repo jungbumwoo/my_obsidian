@@ -101,6 +101,15 @@ func Scale[S ~[]E, E constraints.Integer](s S, sc E) S {
 	}
 	return r
 }
+
+func ScaleAndPrint(p Point) {
+	r := Scale(p, 2)
+	fmt.Println(r.String()) // Does Not COMPILE!
+}
+
+// Why don't we have to write 
+// r := Scale[Point, int32](p, 2)
+// ?
 ```
 
 

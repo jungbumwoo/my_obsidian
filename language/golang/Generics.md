@@ -116,6 +116,12 @@ Constraint Type Inference - Deduce type arguments from type parameter constraint
 
 ## When to use generics
 
+### When are type parameters useful?
+
+- Functions that work on slices, maps, and channels of any element type.
+	- if a function has parameters with those types and function code doesn't make any particular assumptions about the element types then it may be useful to use a type parameter.
+	- alternative to using type parameters for  this kind of function 
+- General Purpose data structure.
 
 
 ---

@@ -25,6 +25,8 @@ This type defines a set of types. It is called the type constraint.
 
 
 ## Type constraints are interfaces
+
+Interface define method sets. but also, Interface define type sets
  
 
 ---

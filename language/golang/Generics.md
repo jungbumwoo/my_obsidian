@@ -40,6 +40,18 @@ type Ordered interface {
 `~` is a new token added to Go.
 `~T` means the set of all types with underlying type T.
 
+#### Constraint literals
+```go
+// 아래 셋 다 같음.
+[S interface{~[]E}, E interface{}]
+[S ~[]E, E interface{}]
+[S ~[]E, E any]
+```
+
+## Type inference
+
+
+
 
 
 

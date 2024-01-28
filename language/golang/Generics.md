@@ -74,6 +74,17 @@ func Scale[E constraints.Integer](s []E, c E) []E {
 	}
 	return r
 }
+
+type Point []int32
+
+func (p Point) String() string {
+	// ...
+}
+
+func ScaleAndPrint(p Point) {
+
+}
+
 ```
 
 

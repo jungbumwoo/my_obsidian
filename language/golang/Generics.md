@@ -120,8 +120,10 @@ Constraint Type Inference - Deduce type arguments from type parameter constraint
 
 - Functions that work on slices, maps, and channels of any element type.
 	- if a function has parameters with those types and function code doesn't make any particular assumptions about the element types then it may be useful to use a type parameter.
-	- alternative to using type parameters for  this kind of function 
+	- alternative to using type parameters for  this kind of function is typically to use reflection. but that's more awkward programming model. it not statically type checked, it's often slower.
 - General Purpose data structure.
+	- replacing an interface type with type parameter can often permit the data to be stored more efficiently.
+	- can avoid type assertions and can instead be fully type checked at complie time.
 
 
 ---

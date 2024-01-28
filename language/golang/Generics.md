@@ -144,7 +144,13 @@ func (s SliceFn[T]) Less(i, j int) bool {
 }
 ```
 
-## When are type parameters not useful?
+## When not to use generics
+#### When are type parameters not useful?
+
+- When just calling a method on the type argument.
+
+interface types permit a kind of generic programming.
+ex) io.reader inref
 
 
 ---

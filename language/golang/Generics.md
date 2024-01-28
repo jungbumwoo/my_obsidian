@@ -13,3 +13,11 @@ m := fmin(2.71, 3.14)
 // min[float64](2.71, 3.14) is evaluated as (min[float64])(2.71, 3.14)
 // Instantiatioin produces a non-generic function.
 ```
+
+#### The types of type parameters
+
+```go
+func min[T constraints.Ordered](x, y T) T
+```
+
+Type parameter lists also have a type

@@ -29,6 +29,17 @@ This type defines a set of types. It is called the type constraint.
 Interface define method sets. but also, Interface define type sets
  
 #### ~ Token
+```go
+package constraints
+
+type Ordered interface {
+	Integer | Float | ~string
+}
+```
+
+`~` is a new token added to Go.
+`~T` means the set of all types with underlying type T.
+
 
 
 

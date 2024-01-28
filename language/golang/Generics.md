@@ -150,7 +150,20 @@ func (s SliceFn[T]) Less(i, j int) bool {
 - When just calling a method on the type argument.
 
 interface types permit a kind of generic programming.
-ex) io.reader inref
+ex) io.reader interface provides a general mechanism for reading data from any value that contains informantion such as a file
+```go
+// good
+func ReadFour(r io.Reader) ([]byte, error)
+
+// bad
+func ReadFour[T io.Reader](r T) ([]byte, error)
+
+```
+
+- When the implementation of a common method is different for each type.
+- When the operation is different for each type, even without a method.
+
+#### When are type parameters useful?
 
 
 ---

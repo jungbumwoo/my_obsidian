@@ -54,7 +54,11 @@ type Ordered interface {
 ```go
 func min[T constraints.Ordered](x, y T) T
 
-var a, b, 
+var a, b, m float64
+
+m = min[float64](a, b)
+
+m = min(a, b) // complier가 타입추론으로 바로 위에꺼를 아래와 같이 general func 같이 사용되게 해줌. looks like ordinary func.
 ```
 
 

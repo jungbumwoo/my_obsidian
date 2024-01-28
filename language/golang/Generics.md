@@ -144,6 +144,9 @@ func (s SliceFn[T]) Less(i, j int) bool {
 }
 ```
 
+## When are type parameters not useful?
+
+
 ---
 
 https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md

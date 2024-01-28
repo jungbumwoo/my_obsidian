@@ -20,4 +20,13 @@ m := fmin(2.71, 3.14)
 func min[T constraints.Ordered](x, y T) T
 ```
 
-Type parameter lists also have a type
+Type parameter lists also have a type for each type parameter.
+This type defines a set of types. It is called the type constraint.
+
+
+## Type constraints are interfaces
+ 
+
+---
+
+https://www.youtube.com/watch?v=Pa_e9EeCdy8

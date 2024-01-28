@@ -50,7 +50,12 @@ type Ordered interface {
 
 ## Type inference
 
+#### calling with type inference
+```go
+func min[T constraints.Ordered](x, y T) T
 
+var a, b, 
+```
 
 
 

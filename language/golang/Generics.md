@@ -104,7 +104,7 @@ func Scale[S ~[]E, E constraints.Integer](s S, sc E) S {
 
 func ScaleAndPrint(p Point) {
 	r := Scale(p, 2)
-	fmt.Println(r.String()) // Does Not COMPILE!
+	fmt.Println(r.String())
 }
 
 // Why don't we have to write 
@@ -112,8 +112,11 @@ func ScaleAndPrint(p Point) {
 // ?
 ```
 
+Constraint Type Inference - Deduce type arguments from type parameter constraints
 
 
 ---
+
+https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md
 
 https://www.youtube.com/watch?v=Pa_e9EeCdy8

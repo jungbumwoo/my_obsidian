@@ -86,6 +86,10 @@ func ScaleAndPrint(p Point) {
 	fmt.Println(r.String()) // Does Not COMPILE!
 }
 
+// Compiler error:
+// r.String undefined
+// (type []int32 has no field or method String)
+
 ```
 
 

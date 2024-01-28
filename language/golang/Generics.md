@@ -93,7 +93,7 @@ func ScaleAndPrint(p Point) {
 ```
 
 ```go
-// All changed code is highlighted.
+// 들어오는 S를 기반으로 E가 추론 됨
 func Scale[S ~[]E, E constraints.Integer](s S, sc E) S {
 	r := make(S, len(s))
 	for i, v := range s {

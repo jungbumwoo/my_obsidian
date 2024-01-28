@@ -134,6 +134,14 @@ type SliceFn[T any] struct {
 	s []T
 	cmp func(T, T) bool
 }
+
+func (s SliceFn[T]) Len() int { return len(s.s)}
+func (s SliceFn[T]) Swap(i, j int) {
+	s.s[i], s.s[j] = s.s[j], s.s[i]
+}
+func (s SliceFn[T]) Less(i, j int) bool {
+	return s.cmp(s.s[i], s.s[j])
+}
 ```
 
 ---

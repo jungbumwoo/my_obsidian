@@ -62,6 +62,19 @@ m = min(a, b) // complier가 타입추론으로 바로 위에꺼를 아래와 �
 ```
 
 
+## How to use
+
+#### Scale a slice of any integer type
+```go
+// This implementation has a problem
+func Scale[E constraints.Integer](s []E, c E) []E {
+	r := make([]E, len(s))
+	for i, v := range s {
+		r[i] = v * c
+	}
+	return r
+}
+```
 
 
 

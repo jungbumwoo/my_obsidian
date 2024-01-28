@@ -28,6 +28,10 @@ This type defines a set of types. It is called the type constraint.
 
 Interface define method sets. but also, Interface define type sets
  
+#### ~ Token
+
+
+
 
 ---
 

@@ -114,6 +114,9 @@ func ScaleAndPrint(p Point) {
 
 Constraint Type Inference - Deduce type arguments from type parameter constraints
 
+## When to use generics
+
+
 
 ---
 

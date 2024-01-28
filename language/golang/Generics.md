@@ -82,7 +82,8 @@ func (p Point) String() string {
 }
 
 func ScaleAndPrint(p Point) {
-
+	r := Scale(p, 2)
+	fmt.Println(r.String()) // Does Not COMPILE!
 }
 
 ```

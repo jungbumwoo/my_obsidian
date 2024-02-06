@@ -1,9 +1,9 @@
 {
-  "commitMessage": "m1 vault backup: {{date}}",
-  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "commitMessage": "imac - vault backup: {{date}}",
+  "commitDateFormat": "YY-MM-DD HH:mm",
   "autoSaveInterval": 5,
-  "autoPushInterval": 0,
-  "autoPullInterval": 10,
+  "autoPushInterval": 5,
+  "autoPullInterval": 1,
   "autoPullOnBoot": true,
   "disablePush": false,
   "pullBeforePush": true,
@@ -17,7 +17,7 @@
   "treeStructure": false,
   "refreshSourceControl": true,
   "basePath": "",
-  "differentIntervalCommitAndPush": false,
+  "differentIntervalCommitAndPush": true,
   "changedFilesInStatusBar": false,
   "showedMobileNotice": true,
   "refreshSourceControlTimer": 7000,
@@ -51,5 +51,5 @@
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
   },
-  "autoCommitMessage": "m1 vault backup: {{date}}"
+  "autoCommitMessage": "vault backup: {{date}}"
 }

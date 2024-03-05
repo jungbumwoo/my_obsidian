@@ -13,3 +13,8 @@ Every request receives a (non-error) response, without the guarantee that it con
 
 ### **Partition tolerance**
 - A partition is a communications break within a distributed system—a lost or temporarily delayed connection between two nodes. Partition tolerance means that the cluster must continue to work despite any number of communication breakdowns between nodes in the system.
+
+When a [network partition](https://en.wikipedia.org/wiki/Network_partition "Network partition") failure happens, it must be decided whether to do one of the following:
+
+- cancel the operation and thus decrease the availability but ensure consistency
+- proceed with the operation and thus provide availability but risk inconsistency.

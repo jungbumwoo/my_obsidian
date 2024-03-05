@@ -1,10 +1,12 @@
 
 ### **Consistency**
+Every read receives the most recent write or an error.
 
 -  all clients see the same data at the same time, no matter which node they connect to
 -  For this to happen, whenever data is written to one node, it must be instantly forwarded or replicated to all the other nodes in the system before the write is deemed ‘successful.’
 
 ### **Availability**
+Every request receives a (non-error) response, without the guarantee that it contains the most recent write.
 
 - Availability means that any client making a request for data gets a response, even if one or more nodes are down.
 - Another way to state this—all working nodes in the distributed system return a valid response for any request, without exception.

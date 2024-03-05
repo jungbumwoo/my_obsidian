@@ -1,0 +1,6 @@
+
+### **Consistency**
+
+### **Availability**
+
+### **Partition tolerance**

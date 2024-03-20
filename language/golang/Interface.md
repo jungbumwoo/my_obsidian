@@ -60,3 +60,4 @@ type NotFoundError struct {
 }
 ```
 
+https://research.swtch.com/interfaces

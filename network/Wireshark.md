@@ -13,3 +13,4 @@
 - 문법 잘 몰라도 각 패킷에 마우스 오른쪽 클릭 -> Apply as Filter로 기본적인건 사용가능.
 - CIDR로 네트워크 대역을 지정하는 것이 가능함 - ex) 208.98.137.0/24  를 적용하면 208.98.137.xxx 에 적용되는 것들을 볼 수 있음
 - http만 보고싶으면 `http` 치니까 바로 나온다.
+- `http.host contains com`,`http.host contains naver`  

@@ -2,6 +2,8 @@
 A variable of interface type stores a pair: the concrete value assigned to the variable, and that value’s type descriptor.  
 To be more precise, the value is the underlying concrete data item that implements the interface and the type describes the full type of that item.
 
+One important detail is that the pair inside an interface variable always has the form (value, concrete type) and cannot have the form (value, interface type). Interfaces do not hold interface values.
+
 ```go
 
 type Reader interface {  // In io. package

@@ -5,7 +5,6 @@ To be more precise, the value is the underlying concrete data item that implemen
 One important detail is that the pair inside an interface variable always has the form (value, concrete type) and cannot have the form (value, interface type). Interfaces do not hold interface values.
 
 ```go
-
 type Reader interface {  // In io. package
  Read(p []byte) (n int, err error)  
 }  
@@ -30,6 +29,8 @@ empty = w // empty will contain the pair (tty, *os.File).
 return r, nil
 ```
 
+
+Go's interfaces let you use [duck typing](http://en.wikipedia.org/wiki/Duck_typing) like you would in a purely dynamic language like Python but still have the compiler catch obvious mistakes like passing an `int` where an object with a `Read` method was expected, or like calling the `Read` method with the wrong number of arguments.
 
 
 ```go

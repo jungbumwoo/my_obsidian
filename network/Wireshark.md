@@ -31,3 +31,6 @@ Out of Order 발생하면, Retransmit, Dup Ack가 딸려옴.
 OS 레벨은 Retransmit,  Dup Ack
 Application level에서는 Window size
  https://www.youtube.com/watch?v=6sVRW_nN3-U&list=PLXvgR_grOs1AM8xNKin4NPEb-VL7bkSal&index=10
+
+
+Statistics - I/O graph 확인하기

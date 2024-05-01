@@ -18,4 +18,4 @@
 Edit - Find Packet 도 패킷 찾는데 유용함. Display Filter, Hex, String, Regular Expression 이용해서 찾을 수 있음.
 
 
- 
+ https://www.youtube.com/watch?v=6sVRW_nN3-U&list=PLXvgR_grOs1AM8xNKin4NPEb-VL7bkSal&index=10

@@ -46,3 +46,9 @@ default는 TCP `tcp.analysis.flags` 를 필터로 TCP Errors로 전부 찍고 �
 이렇게 로우레벨 에러가 확인되면 상위 레벨은 멀쩡할 수 없다.
 ![[Pasted image 20240501164346.png]]
 상위 레이어 에러도 확인됨
+
+![[Screenshot 2024-05-01 at 4.53.31 PM.png]]
+안좋은건 다 모여 있는 케이스. zero window가 발생하면서 통신이 안된 상황도 있음
+
+
+아래 interval을 1sec이 아닌 더 짧게 잡고 분석도 가능

@@ -44,3 +44,5 @@ default는 TCP `tcp.analysis.flags` 를 필터로 TCP Errors로 전부 찍고 �
 로 로우레벨 필터를 추가해본 상황.
 
 이렇게 로우레벨 에러가 확인되면 상위 레벨은 멀쩡할 수 없다.
+![[Pasted image 20240501164346.png]]
+상위 레이어 에러도 확인됨

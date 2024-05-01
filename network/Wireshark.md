@@ -38,3 +38,9 @@ Statistics - I/O graph 확인하기
 
 default는 TCP `tcp.analysis.flags` 를 필터로 TCP Errors로 전부 찍고 있지만 로우레벨 에러부터 Display Filter를 추가하면서 보면 됨
 
+![[Pasted image 20240501163804.png]]
+
+`tcp.analysis.ack_lost_segment || tcp.analysis.out_of_order`
+로 로우레벨 필터를 추가해본 상황.
+
+이렇게 로우레벨 에러가 확인되면 상위 레벨은 멀쩡할 수 없다.

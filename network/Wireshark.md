@@ -34,3 +34,7 @@ Application level에서는 Window size
 
 
 Statistics - I/O graph 확인하기
+![[Pasted image 20240501163335.png]]
+
+default는 TCP `tcp.analysis.flags` 를 필터로 TCP Errors로 전부 찍고 있지만 로우레벨 에러부터 Display Filter를 추가하면서 보면 됨
+

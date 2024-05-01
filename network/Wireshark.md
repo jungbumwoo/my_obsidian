@@ -52,3 +52,16 @@ default는 TCP `tcp.analysis.flags` 를 필터로 TCP Errors로 전부 찍고 �
 
 
 아래 interval을 1sec이 아닌 더 짧게 잡고 분석도 가능
+
+----
+I/O 그래프 말고 Session 그래프로 파악도 가능하다
+
+![[Pasted image 20240501165935.png]]
+문제가 되는거에 follow tcp stream.
+
+![[Pasted image 20240501170049.png]]
+Statistics > TCP Stream Graphs > Stevens  찍어봄
+
+세로축 sequence 번호 증가하는건 전송하는 데이터가 늘어나는걸 의미. 근데 빈 구간이 있음. 송수신을 안했다는 의미. 위 zero window 랑 동일해보인다.
+
+다음 그래프도 구불구불해서 문제가 있는걸 보여줌. 이상적인건 위로 일자로 쭉 뻗은것. 기울기가 낮은건 그만큼 느리다는 의미

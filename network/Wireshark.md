@@ -18,4 +18,15 @@
 Edit - Find Packet 도 패킷 찾는데 유용함. Display Filter, Hex, String, Regular Expression 이용해서 찾을 수 있음.
 
 
+----
+Wireshark으로 TCP 장애 분석하기
+
+장애 분석은 아래에서 위로. 로우레벨에서 위로.
+NIC 있는 하드웨어단에서 문제가 있을 수 있는지?
+여기서 Packet Lost나 Out of Order가 있는지?
+
+Out of Order 발생하면, Retransmit, Dup Ack가 딸려옴.
+
+하드웨어 레벨에서는 Packet Lost, Out of Order
+OS 레벨은 Retransmit,  
  https://www.youtube.com/watch?v=6sVRW_nN3-U&list=PLXvgR_grOs1AM8xNKin4NPEb-VL7bkSal&index=10

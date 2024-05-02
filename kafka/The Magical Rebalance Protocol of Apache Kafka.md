@@ -26,3 +26,5 @@
 - Sub-protocol: Assignment algorithm + "user data"
 	- how do we assign partitions and some extra metadata
 
+![[Pasted image 20240502151419.png]]
+

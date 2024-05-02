@@ -15,4 +15,10 @@
 
 ### Layerd protocol
 
-- Kafka 
+크게 세개로 나눠볼 수 있음
+
+- Kafka Protocol: Group membership
+	- it's responsible for who is a member in this group and who is a leader and then there is the group protocol itself
+- Group Protocol: Resource definition, assignment process
+- Sub-protocol: Assignment algorithm + "user data"
+

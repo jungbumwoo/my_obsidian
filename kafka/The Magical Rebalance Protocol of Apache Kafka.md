@@ -19,6 +19,8 @@
 
 - Kafka Protocol: Group membership
 	- it's responsible for who is a member in this group and who is a leader and then there is the group protocol itself
-- Group Protocol: Resource definition, assignment process
+- Group Protocol: Resource definition, assignment process.
+	- its protocol that members of the client consumer group used to basically decide on a location how do they communicate with each other how do remember I said that all the information exists on the client but it exists on the clients in a collective way
+	- we needed the leader who makes the decision to have all this collective information you need a language for that 
 - Sub-protocol: Assignment algorithm + "user data"
 

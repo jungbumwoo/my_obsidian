@@ -12,3 +12,7 @@
 - Join Group
 - Assign Resources, via a group leader.
 - Maintain group membership
+
+### Layerd protocol
+
+- Kafka 

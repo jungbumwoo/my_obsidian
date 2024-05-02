@@ -24,5 +24,5 @@
 	- all the information exists on client in a collective way.
 	- wee need the leader who makes the decision to have all this collective information you need a language for that and this is the group protocol.
 - Sub-protocol: Assignment algorithm + "user data"
-	- how do we assign partitions.
+	- how do we assign partitions and some extra metadata
 

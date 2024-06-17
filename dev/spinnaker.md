@@ -1,0 +1,1 @@
+https://spinnaker.io/docs/concepts/

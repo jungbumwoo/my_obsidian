@@ -1,5 +1,4 @@
 
-
 ### CAP Theorem
 It is impossible for a distributed system to simultaneously provide more than two of these three guarantees.
 
@@ -22,3 +21,10 @@ N = number of replica
 W = A write quorum of size W.
 R = A read quorum of size R.
 
+The configuration of W, R and N is a typical tradeoff between latency and consistency.
+
+### Consistency models
+
+- strong consistency: any read operation returns a value corresponding to the result of the most updated write data item.
+- weak consistency: subsequent read operations may not see the most updated value.
+- eventual consistency: this is a specific form of weak consistency. Given enough time, all updates are propagated, and all replicas are consistent.

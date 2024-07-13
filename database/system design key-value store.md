@@ -9,3 +9,9 @@ It is impossible for a distributed system to simultaneously provide more than tw
 
 Since network failure is unavoidable, a distributed system must tolerate network partition.
 
+### Data partition
+There are two challenges while partitioning the data:
+- Distribute data across multiple servers evenly.
+- Minimize data movement when nodes are added or removed.
+
+### Data replication

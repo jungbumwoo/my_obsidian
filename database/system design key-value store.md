@@ -15,3 +15,10 @@ There are two challenges while partitioning the data:
 - Minimize data movement when nodes are added or removed.
 
 ### Data replication
+After a key is mapped to a position on the hash ring, walk clockwise from that position and choose the first unique N servers .
+
+### Consistency
+N = number of replica
+W = A write quorum of size W.
+R = A read quorum of size R.
+

@@ -21,6 +21,10 @@ Manage meta data of the cluster.
 2. If already Vote on epoch, send the same answer
 3. Otherwire, grant vot only if the candidate's log is at least as "long"
 
+#### #### Completion
+
+the new leader will send a BeginQuorumEpoch request, including the new epoch, to the other controllers
+
 
 
 https://developer.confluent.io/courses/architecture/control-plane/

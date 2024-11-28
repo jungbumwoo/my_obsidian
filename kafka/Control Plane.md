@@ -12,6 +12,13 @@ Manage meta data of the cluster.
 
 ### Leader Election
 
+#### #### Vote Request[](https://developer.confluent.io/courses/architecture/control-plane/#vote-request)
 
+다른 controller 들에 VoteRequest를 보냄. lastOffset, lastOffsetEpoch, candidateEpoch 보냄
+
+#### Vote Response
+1. If higher epoch is seen, reject.
+2. If already Vote on epoch, send the same answer
+3. 
 
 https://developer.confluent.io/courses/architecture/control-plane/

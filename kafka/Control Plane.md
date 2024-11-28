@@ -19,6 +19,8 @@ Manage meta data of the cluster.
 #### Vote Response
 1. If higher epoch is seen, reject.
 2. If already Vote on epoch, send the same answer
-3. 
+3. Otherwire, grant vot only if the candidate's log is at least as "long"
+
+
 
 https://developer.confluent.io/courses/architecture/control-plane/

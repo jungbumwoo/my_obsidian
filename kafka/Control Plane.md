@@ -27,6 +27,8 @@ the new leader will send a BeginQuorumEpoch request, including the new epoch, 
 
 #### KRaft Cluster Metadata Snapshot[](https://developer.confluent.io/courses/architecture/control-plane/#kraft-cluster-metadata-snapshot)
 
-metadata가 log 로 계속 쌓이는건 아니고 
+metadata가 log 로 계속 쌓이는건 아니고 snapshot을 offset, epoch 랑 함께 남김
+
+주로 broker가 restart, new brokers coming online 시 snapshot을 이용함
 
 developer.confluent.io/courses/architecture/control-plane/

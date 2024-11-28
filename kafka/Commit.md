@@ -1,6 +1,6 @@
 
 1. Commit Sync
-2. Commit async
+2. Commit Async
 
 async commit은 commit 결과를 care 하지 않음.
 Sync와 달리 retry도 하지 않음. 어차피 추후 뒤에 발생하는 커밋이 커밋되면 increment 되어서 이전 offset 위치가 커밋 될 필요가 없음. 커밋별로 block 되지 않음.

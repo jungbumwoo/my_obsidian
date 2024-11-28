@@ -25,6 +25,8 @@ Manage meta data of the cluster.
 
 the new leader will send a BeginQuorumEpoch request, including the new epoch, to the other controllers
 
+#### KRaft Cluster Metadata Snapshot[](https://developer.confluent.io/courses/architecture/control-plane/#kraft-cluster-metadata-snapshot)
 
+metadata가 log 로 계속 쌓이는건 아니고 
 
-https://developer.confluent.io/courses/architecture/control-plane/
+developer.confluent.io/courses/architecture/control-plane/

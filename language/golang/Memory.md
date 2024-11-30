@@ -45,6 +45,17 @@
 - **`mheap`**:
     - Go에서 메모리 관리의 최상위 레벨 구조로, 모든 메모리 할당의 근원.
     - `mheap`에는 **`mcentral` 배열**을 갖고 있음. 이 배열은 각 **크기 클래스(span class)**에 대한 `mcentral`을 저장.
+    - `mheap`은 사용 가능한 페이지들을 관리하기 위해 두 가지 구조를 사용
+
+		1. **`free` 배열**:
+		    - 크기별로 사용 가능한 페이지를 리스트 형태로 관리.
+		    - 예: `free[3]` → 3페이지로 구성된 `mspan`들의 연결 리스트.
+		    - 이 배열은 **1 ~ 127 페이지**를 가진 `mspan`을 관리.
+		2. **`freelarge`**:
+		    - 127 페이지 이상을 가진 큰 `mspan`들의 목록.
+		    - 트리 자료구조인 **`mtreap`**으로 관리.
+		    - 큰 메모리 블록을 효율적으로 검색하고 할당 가능
+    - 
 - **`mcentral`**:
 	- 특정 크기 클래스에 속하는 **메모리 블록(`mspan`)**을 관리합니다.
 
@@ -59,5 +70,6 @@
 #### mcentral에 사용 가능한 `mspan`이 없을 때
 - `mcentral`은 **`mheap`에서 새로운 페이지(run of pages)**를 가져옴.
 - 이렇게 가져온 페이지를 필요한 크기 클래스로 나누어 `mspan`으로 사용.
+
 
 https://medium.com/@ankur_anand/a-visual-guide-to-golang-memory-allocator-from-ground-up-e132258453ed

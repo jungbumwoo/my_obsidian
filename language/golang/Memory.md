@@ -24,6 +24,18 @@
 ### **Go의 mcache와 mcentral 작동 원리**
 
 - **`mcache`**: 각 스레드가 사용하는 **빠른 메모리 할당 캐시**. 하지만, 필요한 크기의 메모리 블록이 모두 사용 중이라 **빈 슬롯이 없으면**, 새로운 메모리 블록(`mspan`)이 필요.  **`mcentral`**에서 새로운 `mspan`을 가져옴. 
+- **`mcentral`**: 특정 크기 클래스에 맞는 모든 `mspan`을 관리하는 구조체.
+- 각 **크기 클래스**에 대해 두 개의 `mspan` 리스트를 관리:
+    1. **empty mspanList**: 모든 객체가 사용 중인 `mspan` 목록.
+    2. **nonempty mspanList**: 아직 할당되지 않은 객체(빈 슬롯)가 남아 있는 `mspan` 목록.
+
+- `mcache`에 빈 슬롯이 없을 때, **`mcentral`의 `nonempty mspanList`**에서 `mspan`을 가져옴.
+- 가져온 `mspan`은 이제 **`empty mspanList`**로 이동.
+    - 이유: `mcache`에 들어간 `mspan`은 더 이상 `mcentral` 관점에서 사용 가능한 빈 슬롯이 없다고 간주됨.
+-  `mspan`에 있던 객체가 프로그램에서 해제되면, 빈 슬롯이 다시 생김.
+- 빈 슬롯의 수에 따라 **`mcentral`의 리스트**가 업데이트:
+    - 만약 `mspan`에 빈 슬롯이 생기면, **`empty mspanList`**에서 **`nonempty mspanList`**로 이동.
+    - 이렇게 하면 `mcentral`은 항상 사용 가능한 `mspan`을 효율적으로 관리.
 
 각 스레드 별 할당 되기에 할당 시 lock 이 걸리지 않음.
 https://medium.com/@ankur_anand/a-visual-guide-to-golang-memory-allocator-from-ground-up-e132258453ed

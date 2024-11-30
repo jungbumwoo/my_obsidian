@@ -1,0 +1,1 @@
+https://medium.com/@ankur_anand/how-to-mock-in-your-go-golang-tests-b9eee7d7c266

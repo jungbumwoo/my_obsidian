@@ -42,6 +42,8 @@
 
 ### **mheap, mcentral, mspan의 관계와 작동 방식**
 
+![[Pasted image 20241130174028.png]]
+
 - **`mheap`**:
     - Go에서 메모리 관리의 최상위 레벨 구조로, 모든 메모리 할당의 근원.
     - `mheap`에는 **`mcentral` 배열**을 갖고 있음. 이 배열은 각 **크기 클래스(span class)**에 대한 `mcentral`을 저장.
@@ -55,17 +57,24 @@
 		    - 127 페이지 이상을 가진 큰 `mspan`들의 목록.
 		    - 트리 자료구조인 **`mtreap`**으로 관리.
 		    - 큰 메모리 블록을 효율적으로 검색하고 할당 가능
-    - 
+
+![[Pasted image 20241130174148.png]]
 - **`mcentral`**:
-	- 특정 크기 클래스에 속하는 **메모리 블록(`mspan`)**을 관리합니다.
+	-  Go provides each **Logical Processors**(**P**) a Local Thread Cache of Memory known as **mcache**
+	- 특정 크기 클래스에 속하는 **메모리 블록(`mspan`)**을 관리.
+		- class size에 따라 두 타입이 나뉨. GC 실행 시 이점을 위해서 구분해둠 
+		- **noscan** object doesn’t need to be traversed to find any containing live object.
+			1. **scan** — Object that contains a pointer.
+			2. **noscan** — Object that doesn’t contains a pointer.
+	
 
  `mheap` → `mcentral` → `mspan` 구조로 메모리가 내려감
 
 #### **mcache와 mcentral의 상호작용**
 - **mcache**가 빈 슬롯이 없으면, 필요한 크기의 `mspan`을 `mcentral`에서 요청.
-- 요청 과정에서 **락(lock)**이 사용되지만, 락은 **요청된 크기 클래스의 `mcentral`에만 적용**됩.
+- 요청 과정에서 **락(lock)**이 사용되지만, 락은 **요청된 크기 클래스의 `mcentral`에만 적용**.
     - 다른 크기 클래스의 요청은 동시에 처리 가능.
-    - 예: 16바이트 블록의 `mcentral`과 32바이트 블록의 `mcentral`은 동시에 요청을 처리할 수 있음.
+    - ex - 16바이트 블록의 `mcentral`과 32바이트 블록의 `mcentral`은 동시에 요청을 처리할 수 있음.
 
 #### mcentral에 사용 가능한 `mspan`이 없을 때
 - `mcentral`은 **`mheap`에서 새로운 페이지(run of pages)**를 가져옴.

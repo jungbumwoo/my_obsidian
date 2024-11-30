@@ -19,7 +19,9 @@
 
 - **`mspan`**: 페이지와 런을 추적하고 관리하는 데이터 구조.
 - **크기 클래스**: 메모리를 정해진 크기로 나눠 효율적으로 관리.
-- **12.5% 제한**: 메모리 요청을 상위 크기 클래스로 반올림했을 때, 낭비 공간이 최대 12.5% 이하로 제한됨.
+
+
+각 스레드 별 할당 되기에 할당 시 lock 이 걸리지 않음.
 
 ### **Go의 mcache와 mcentral 작동 원리**
 
@@ -37,5 +39,15 @@
     - 만약 `mspan`에 빈 슬롯이 생기면, **`empty mspanList`**에서 **`nonempty mspanList`**로 이동.
     - 이렇게 하면 `mcentral`은 항상 사용 가능한 `mspan`을 효율적으로 관리.
 
-각 스레드 별 할당 되기에 할당 시 lock 이 걸리지 않음.
+
+### **mheap, mcentral, mspan의 관계와 작동 방식**
+
+- **`mheap`**:
+    - Go에서 메모리 관리의 최상위 레벨 구조로, 모든 메모리 할당의 근원.
+    - `mheap`에는 **`mcentral` 배열**을 갖고 있음. 이 배열은 각 **크기 클래스(span class)**에 대한 `mcentral`을 저장.
+- **`mcentral`**:
+	- 특정 크기 클래스에 속하는 **메모리 블록(`mspan`)**을 관리합니다.
+
+ `mheap` → `mcentral` → `mspan` 구조로 메모리가 내려감
+
 https://medium.com/@ankur_anand/a-visual-guide-to-golang-memory-allocator-from-ground-up-e132258453ed

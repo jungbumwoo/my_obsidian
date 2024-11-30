@@ -20,12 +20,12 @@
 - **`mspan`**: 페이지와 런을 추적하고 관리하는 데이터 구조.
 - **크기 클래스**: 메모리를 정해진 크기로 나눠 효율적으로 관리.
 
-
-각 스레드 별 할당 되기에 할당 시 lock 이 걸리지 않음.
+.
 
 ### **Go의 mcache와 mcentral 작동 원리**
 
-- **`mcache`**: 각 스레드가 사용하는 **빠른 메모리 할당 캐시**. 하지만, 필요한 크기의 메모리 블록이 모두 사용 중이라 **빈 슬롯이 없으면**, 새로운 메모리 블록(`mspan`)이 필요.  **`mcentral`**에서 새로운 `mspan`을 가져옴. 
+- **`mcache`**: 각 스레드가 사용하는 **빠른 메모리 할당 캐시**. 하지만, 필요한 크기의 메모리 블록이 모두 사용 중이라 **빈 슬롯이 없으면**, 새로운 메모리 블록(`mspan`)이 필요.  **`mcentral`**에서 새로운 `mspan`을 가져옴.  
+
 - **`mcentral`**: 특정 크기 클래스에 맞는 모든 `mspan`을 관리하는 구조체.
 - 각 **크기 클래스**에 대해 두 개의 `mspan` 리스트를 관리:
     1. **empty mspanList**: 모든 객체가 사용 중인 `mspan` 목록.
@@ -49,5 +49,15 @@
 	- 특정 크기 클래스에 속하는 **메모리 블록(`mspan`)**을 관리합니다.
 
  `mheap` → `mcentral` → `mspan` 구조로 메모리가 내려감
+
+#### **mcache와 mcentral의 상호작용**
+- **mcache**가 빈 슬롯이 없으면, 필요한 크기의 `mspan`을 `mcentral`에서 요청.
+- 요청 과정에서 **락(lock)**이 사용되지만, 락은 **요청된 크기 클래스의 `mcentral`에만 적용**됩.
+    - 다른 크기 클래스의 요청은 동시에 처리 가능.
+    - 예: 16바이트 블록의 `mcentral`과 32바이트 블록의 `mcentral`은 동시에 요청을 처리할 수 있음.
+
+#### mcentral에 사용 가능한 `mspan`이 없을 때
+- `mcentral`은 **`mheap`에서 새로운 페이지(run of pages)**를 가져옴.
+- 이렇게 가져온 페이지를 필요한 크기 클래스로 나누어 `mspan`으로 사용.
 
 https://medium.com/@ankur_anand/a-visual-guide-to-golang-memory-allocator-from-ground-up-e132258453ed

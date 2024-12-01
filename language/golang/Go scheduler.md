@@ -44,6 +44,15 @@
     - **OS 스레드보다 훨씬 가벼운 고루틴**을 관리하고, 동시성 퍼포먼스가 좋음.
 
 
+The rectangle represents a context for scheduling. You can look at it as a localized version of the scheduler which runs Go code on a single thread. It's the important part that lets us go from a N:1 scheduler to a M:N scheduler.
+
+To bring down mutex contention, each context has its own local runqueue.
+
+### Who you gonna (sys)call?
+
+
+
+
 https://povilasv.me/go-scheduler/
 https://www.cs.columbia.edu/~aho/cs6998/reports/12-12-11_DeshpandeSponslerWeiss_GO.pdf
 

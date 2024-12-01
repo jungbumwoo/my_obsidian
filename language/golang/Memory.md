@@ -81,4 +81,6 @@
 - 이렇게 가져온 페이지를 필요한 크기 클래스로 나누어 `mspan`으로 사용.
 
 
+https://medium.com/a-journey-with-go/go-memory-management-and-allocation-a7396d430f44
+
 https://medium.com/@ankur_anand/a-visual-guide-to-golang-memory-allocator-from-ground-up-e132258453ed

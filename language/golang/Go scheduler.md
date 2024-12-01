@@ -9,3 +9,8 @@
 
 https://povilasv.me/go-scheduler/
 https://www.cs.columbia.edu/~aho/cs6998/reports/12-12-11_DeshpandeSponslerWeiss_GO.pdf
+
+https://morsmachine.dk/go-scheduler
+
+Analysis of the Go runtime scheduler
+https://www.cs.columbia.edu/~aho/cs6998/reports/12-12-11_DeshpandeSponslerWeiss_GO.pdf

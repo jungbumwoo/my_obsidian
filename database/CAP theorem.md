@@ -18,3 +18,6 @@ When a [network partition](https://en.wikipedia.org/wiki/Network_partition "Net
 
 - cancel the operation and thus decrease the availability but ensure consistency
 - proceed with the operation and thus provide availability but risk inconsistency.
+
+
+http://eincs.com/2013/07/misleading-and-truth-of-cap-theorem/

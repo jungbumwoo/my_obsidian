@@ -20,4 +20,8 @@ When a [network partition](https://en.wikipedia.org/wiki/Network_partition "Net
 - proceed with the operation and thus provide availability but risk inconsistency.
 
 
+CAP Twelve Years Later: How the "Rules" Have Changed
+https://ieeexplore.ieee.org/document/6133253
+
+
 http://eincs.com/2013/07/misleading-and-truth-of-cap-theorem/

@@ -3,3 +3,5 @@
 -  _onPartitionsAssigned_ rebalance 이후 partiton 새로 부여되면 호출. 필요한 경우 갖다 쓰면 됨.
 
 confluent go client 는 지원해주지 않음;;
+
+

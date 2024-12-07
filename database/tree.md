@@ -9,3 +9,7 @@ to maintain a BST on disk, several problem exists.
 	- 2-3 Trees and other low-fanout trees have a similar limitation. usefual as in-memory data structures, but small node size makes them impractial for external storage.
 
 ### Disk-Based Structures
+
+HDDs and SSDs are addressing chunks of memory rather than individual bytes, most operating systems have a block device abstraction. When we're reading a single word from a block device, the whole block containing it is read.
+
+In SSDs, we don't have a strong emphasis on random vs sequential I/O

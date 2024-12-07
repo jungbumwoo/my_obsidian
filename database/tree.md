@@ -8,3 +8,4 @@ to maintain a BST on disk, several problem exists.
 - Tree height
 	- 2-3 Trees and other low-fanout trees have a similar limitation. usefual as in-memory data structures, but small node size makes them impractial for external storage.
 
+### Disk-Based Structures

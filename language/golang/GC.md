@@ -14,7 +14,10 @@ We're gonna make your program slower, But what we're gonna give you, reduce GC l
 3. Mark
 	Mark objects and follow pointers until pointer queue is empty
 	Write barrier tracks pointer changes by mutator
-	
+4. Mark Termination(STW)
+	STW
+	Rescan globals/changed stacks, finish marking, shrink stacks,
+	Li
 
 
 

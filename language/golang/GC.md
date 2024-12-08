@@ -17,7 +17,13 @@ We're gonna make your program slower, But what we're gonna give you, reduce GC l
 4. Mark Termination(STW)
 	STW
 	Rescan globals/changed stacks, finish marking, shrink stacks,
-	Li
+	Literature contains non-STW algorithms:
+5. Sweep
+	 Reclaim unmarked objects as needed
+	 Adjust GC pacing for next cycle
+6.  Off
+
+2~4 (Write Barrier On - 이때 발생하는 pointer 변경은 gray로 마킹해서 STW가 발생하지 않음)
 
 
 

@@ -14,3 +14,5 @@ https://github.com/apache/kafka/pull/7115
 
 
 ### Consumer
+
+Reprocessing caused by application crashes

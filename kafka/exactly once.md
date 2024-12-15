@@ -20,7 +20,12 @@ what happends when the old leader comes backs?
 snapshot , log 이용해서 follow up .
 
 
-### What Pro
+### What Problems Do Transactions solve?
+
+reads events from source topic, maybe process them, and writes result to another topic
+
+#### Reprocessing caused by application crash
+
 
 
 

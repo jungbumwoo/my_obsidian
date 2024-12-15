@@ -1,7 +1,7 @@
 
 
 ### Producer
-Producer restart
+#### Producer restart
 When producer starts, if the idempotent producer is enabled, the prodcuer will initialize and reach out a Kafka broker to generate a producer ID. 
 
 1.
@@ -12,6 +12,9 @@ If the old producer froze and then came back to life after its replacement start
 
 idempotent producer only prevents duplicates in case of retries that are caused by the producer's internal logic.
 
+#### Broker failure
+
+fellower 가 leader로 승격되더라도 producer with the fiv
 
 
 https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals

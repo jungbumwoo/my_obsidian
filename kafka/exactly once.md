@@ -28,7 +28,7 @@ reads events from source topic, maybe process them, and writes result to another
 A 토픽에 consume 후 B 토픽에 produce 되었으나 A consume 을 커밋하지 못한 경우
 
 #### Reprocessing caused by zombie applications
-consume 해놓고
+consume 해놓고 heart beat miss 로 파티션이 다른 consumer에 할당된 상태에서 둘다 consume msg가 processing 됨
 
 
 https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals

@@ -20,6 +20,9 @@ what happends when the old leader comes backs?
 snapshot , log 이용해서 follow up .
 
 
+### What Pro
+
+
 
 https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals
 

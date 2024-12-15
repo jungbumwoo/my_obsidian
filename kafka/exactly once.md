@@ -25,8 +25,10 @@ snapshot , log 이용해서 follow up .
 reads events from source topic, maybe process them, and writes result to another topic
 
 #### Reprocessing caused by application crash
+A 토픽에 consume 후 B 토픽에 produce 되었으나 A consume 을 커밋하지 못한 경우
 
-
+#### Reprocessing caused by zombie applications
+consume 해놓고
 
 
 https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals

@@ -16,6 +16,8 @@ idempotent producer only prevents duplicates in case of retries that are caused 
 
 fellower 가 leader로 승격되더라도 producer with the five last sequence id  까지는 동기화하고 있음.
 
+what happends when the old leader comes backs?
+snapshot , log 이용해서 follow up .
 
 
 

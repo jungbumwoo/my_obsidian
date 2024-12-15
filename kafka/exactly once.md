@@ -14,7 +14,9 @@ idempotent producer only prevents duplicates in case of retries that are caused 
 
 #### Broker failure
 
-fellower 가 leader로 승격되더라도 producer with the fiv
+fellower 가 leader로 승격되더라도 producer with the five last sequence id  까지는 동기화하고 있음.
+
+
 
 
 https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Improvement+Proposals

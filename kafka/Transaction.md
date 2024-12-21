@@ -6,4 +6,4 @@
 
 ### How Do Transactions Guarantee Exactly-Once?
 
-Take our s
+

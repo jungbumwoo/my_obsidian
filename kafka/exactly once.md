@@ -40,3 +40,5 @@ https://github.com/apache/kafka/pull/7115
 
 Reprocessing caused by application crashes
 Reprocessing caused by zombie applications
+
+https://cwiki.apache.org/confluence/display/KAFKA/KIP-447%3A+Producer+scalability+for+exactly+once+semantics

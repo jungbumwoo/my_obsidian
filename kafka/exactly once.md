@@ -44,3 +44,8 @@ Reprocessing caused by zombie applications
 https://cwiki.apache.org/confluence/display/KAFKA/KIP-447%3A+Producer+scalability+for+exactly+once+semantics
 
 https://docs.google.com/document/d/1LhzHGeX7_Lay4xvrEXxfciuDWATjpUXQhrEIkph9qRE/edit?tab=t.0#heading=h.beexgkt7kkor
+
+
+https://cwiki.apache.org/confluence/display/KAFKA/KIP-447%3A+Producer+scalability+for+exactly+once+semantics
+
+https://www.confluent.io/blog/apache-kafka-2-5-latest-version-updates/

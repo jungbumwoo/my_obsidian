@@ -46,6 +46,8 @@ https://cwiki.apache.org/confluence/display/KAFKA/KIP-447%3A+Producer+scalabilit
 https://docs.google.com/document/d/1LhzHGeX7_Lay4xvrEXxfciuDWATjpUXQhrEIkph9qRE/edit?tab=t.0#heading=h.beexgkt7kkor
 
 
+아직 이해 안간 부분
+To preserve the static partition mapping in a consumer group where assignments are frequently changing, the simplest solution is to create a separate producer for every input partition. This is what Kafka Streams does today. 
 https://cwiki.apache.org/confluence/display/KAFKA/KIP-447%3A+Producer+scalability+for+exactly+once+semantics
 
 https://www.confluent.io/blog/apache-kafka-2-5-latest-version-updates/

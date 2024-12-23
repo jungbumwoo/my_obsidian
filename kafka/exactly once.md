@@ -45,6 +45,7 @@ https://cwiki.apache.org/confluence/display/KAFKA/KIP-447%3A+Producer+scalabilit
 
 https://docs.google.com/document/d/1LhzHGeX7_Lay4xvrEXxfciuDWATjpUXQhrEIkph9qRE/edit?tab=t.0#heading=h.beexgkt7kkor
 
+https://docs.google.com/document/d/11Jqy_GjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit?tab=t.0#heading=h.xq0ee1vnpz4o
 
 아직 이해 안간 부분
 To preserve the static partition mapping in a consumer group where assignments are frequently changing, the simplest solution is to create a separate producer for every input partition. This is what Kafka Streams does today. 

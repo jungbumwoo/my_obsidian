@@ -1,5 +1,7 @@
 
 
+트랜잭션과 별개로.. 문득 드는 생각, 오토커밋을 하지 않는 상황. 특정 msg 처리 과정에서 에러가 발생하면 msg부터 정상 처리가 안되는 경우, 해결 될 때 까지 해당 특정 파티션의 이후 msg들이 처리가 안되는 케이스가 발생할듯
+
 
 ### Transactional ID
 until 2.5, the only way to guarantee  fencing was to statically map the transactional ID to partitions.

@@ -29,4 +29,7 @@ https://cwiki.apache.org/confluence/display/KAFKA/Transactional+Messaging+in+Kaf
 - InitPidRequest(TransactionalId, transaction timeout)
  the mapping to the corresponding PID is logged in the transaction log in step 2a. This enables us to return the same PID for the TransactionalId to future instances of the producer, and hence enables recovering or aborting previously incomplete transactions.
 
+__consumer_offsets topic is one of the TopicPartitions in the transaction, the commit (or abort) marker is also written to the log, and the consumer coordinator is notified that it needs to materialize these offsets in the case of a commit or ignore them in the case of an abort
+
 TransactionalId 는 어떻게 설정하는거지?
+

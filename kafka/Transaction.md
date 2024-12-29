@@ -26,5 +26,7 @@ https://docs.google.com/document/d/11Jqy_GjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/
 
 https://cwiki.apache.org/confluence/display/KAFKA/Transactional+Messaging+in+Kafka
 
-InitPidRequest
+- InitPidRequest(TransactionalId, transaction timeout)
+ the mapping to the corresponding PID is logged in the transaction log in step 2a. This enables us to return the same PID for the TransactionalId to future instances of the producer, and hence enables recovering or aborting previously incomplete transactions.
 
+TransactionalId 는 어떻게 설정하는거지?

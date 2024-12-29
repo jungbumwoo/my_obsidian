@@ -20,3 +20,8 @@ manage transactions of messages sent by producers, and commit / abort the append
 
 
 https://docs.google.com/document/d/11Jqy_GjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit?tab=t.0
+
+
+### Transactional Messaging In Kafka
+
+https://cwiki.apache.org/confluence/display/KAFKA/Transactional+Messaging+in+Kafka

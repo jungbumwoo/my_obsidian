@@ -11,3 +11,10 @@ consumer group metadata for fencing in addition to transactional IDs.
 ### How Do Transactions Guarantee Exactly-Once?
 
 
+
+**transaction coordinator**
+manage transactions of messages sent by producers, and commit / abort the appends of these messages as a whole
+
+
+
+https://docs.google.com/document/d/11Jqy_GjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit?tab=t.0

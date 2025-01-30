@@ -28,3 +28,10 @@ O : 0 or more.
 |O : 1 or 0.
 || : exactly one.
 <-(tri): many.
+
+---
+****There are mainly two types of decompositions in DBMS**** 
+
+1. Lossless join Decomposition
+2. Lossy join Decomposition
+

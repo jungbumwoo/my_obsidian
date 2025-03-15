@@ -1,5 +1,11 @@
 
 
+### Redo log
+
+Redo log application is performed during initialization, before accepting any connections. If all changes are flushed from the [buffer pool](https://dev.mysql.com/doc/refman/8.4/en/glossary.html#glos_buffer_pool "buffer pool") to the [tablespaces](https://dev.mysql.com/doc/refman/8.4/en/glossary.html#glos_tablespace "tablespace") (`ibdata*` and `*.ibd` files) at the time of the shutdown or crash, redo log application is skipped. `InnoDB` also skips redo log application if redo log files are missing at startup.
+
+
+
 ### binlog
 
 The binary log contains “events” that describe database changes such as table creation operations or changes to table data. It also contains events for statements that potentially could have made changes.

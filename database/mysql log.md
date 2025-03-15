@@ -1,10 +1,15 @@
 
 
+
 ### Redo log
 
 Redo log application is performed during initialization, before accepting any connections. If all changes are flushed from the [buffer pool](https://dev.mysql.com/doc/refman/8.4/en/glossary.html#glos_buffer_pool "buffer pool") to the [tablespaces](https://dev.mysql.com/doc/refman/8.4/en/glossary.html#glos_tablespace "tablespace") (`ibdata*` and `*.ibd` files) at the time of the shutdown or crash, redo log application is skipped. `InnoDB` also skips redo log application if redo log files are missing at startup.
 
+redo log
 
+A disk-based data structure used during **crash recovery**, to correct data written by incomplete **transactions**. During normal operation, it encodes requests to change `InnoDB` table data, which result from SQL statements or low-level API calls. Modifications that did not finish updating the **data files** before an unexpected **shutdown** are replayed automatically.
+
+The redo log is physically represented on disk as a set of redo log files. Redo log data is encoded in terms of records affected; this data is collectively referred to as **redo**. The passage of data through the redo log is represented by an ever-increasing **LSN** value.
 
 ### binlog
 

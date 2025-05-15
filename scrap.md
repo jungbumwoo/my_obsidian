@@ -13,5 +13,5 @@ https://www.youtube.com/watch?v=WDIkqP4JbkE
 호다닥 공부해보는 x509와 친구들
 https://gruuuuu.github.io/security/what-is-x509/
 
-
+https://news.hada.io/topic?id=20913
 https://bernsteinbear.com/blog/pl-writing/

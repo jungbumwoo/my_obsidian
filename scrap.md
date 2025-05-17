@@ -15,3 +15,6 @@ https://gruuuuu.github.io/security/what-is-x509/
 
 https://news.hada.io/topic?id=20913
 https://bernsteinbear.com/blog/pl-writing/
+
+rate limiters
+https://gist.github.com/jungbumwoo/60a15d09810adb03c14d6f3f84154db1

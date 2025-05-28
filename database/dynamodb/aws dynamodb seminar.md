@@ -66,3 +66,213 @@ ondemand 써도 스로틀링 걸린다. 줄어드는 것 뿐.
 ondemand : do not scale down. 늘어나거나 유지. 인스턴스 비용은 없음. aws에 안좋은 것. 유저한테 좋은 부분.스토리지 테이블  
 rcu,wcu 비용, 스토리지비용 차이. 무중단 없이 바꿀 수 있음. 퍼포먼스 차이 없음. 위험부담 없음.  
 하루정도 지나서 비용을 보세요.파티션이 아닌 테이블 단위에서 SLA 99.999%ddb 페이지네이션 힘듬. admin에서는 적합하지 않음.ddb는 TTL 는 어떻게 지우는지?
+
+
+
+-----  
+
+aws reinvent tinder
+
+ec mongodb -> dynamo. 이 영상은 꼭 보셨으면.
+
+  
+
+이기종간 db  migration
+
+  
+
+  
+
+읽고 싶은대로 저장.
+
+  
+
+쓰기가 많은지.
+
+일정한 latency 보장.
+
+  
+
+  
+
+nosql 은 테이블 구조가 중요하는게 아니라
+
+어떤 파라미터로 읽고 쓸지가 중요.
+
+  
+
+일반적으로는 multi table이 좋다.
+
+  
+
+nosql은 OLAP는 잘 하진 않음.
+
+  
+
+-----------------
+
+  
+
+파티션키는 hashing 하기 때문에 이퀄조건 밖에 못쓴다.
+
+  
+
+RDS와 달리 패턴만 있고 공식이 없다.
+
+  
+
+GSI  pk 값이 원본 테이블에 있는 경우에만 복재 된다.
+
+  
+
+sdk level에서 retry가 다 끝나고 스로틀링 모니터에 잡히는 것.
+
+  
+
+  
+
+  
+
+  
+
+dynamodb streams 
+
+  
+
+내부 파티션 갯수 알 필요 없다.
+
+껏다 켰다 할 수 있음. 켜는 것 비용 없음.
+
+item 가져가면 가져가면 돈나옴.  lambda 로 쓰면 steams 비용은 안나옴
+
+steams에서 old, new, old and new 뭐 받을지 선택 가능
+
+  
+
+dynamodb + lambda 많이 씀
+
+lambda 처리 가능한 캡이 있어서 이거 넘어가면 못함.
+
+  
+
+Q. 엄격하게 TTL 보장이 필요하면 코드에서 한번 더 필터링해줘야하는 상황?
+
+쿼리 시에는 조건에 직접 filter 로직을 작성해줘야함
+
+  
+
+샤드 늘리는거보다 합치는게 어렵다.
+
+  
+
+transaction 은 10분만 보장되는듯?
+
+  
+
+128테라까지 쓸 수 있는데 정규화 안하는 회사들도 있음. join 없이 씀
+
+  
+
+RDS FK 도 스케일이 커지면 안쓰려한다.
+
+  
+
+  
+
+redis: command thread, io thread.
+
+메인스레드는 sequence command 실행만. io thread 가 
+
+  
+
+elastic cache
+
+1.버전을 최신으로 쓴다.
+
+2.클러스터 모드만 쓴다. (싱글은 스케일업 해봤자 command thread  처리가 늘어나지 않는다. 나중에 바꾸려면 갈아엎어야한다.)
+
+  
+
+redis에서 pubsub은 안했으면 좋겠다.
+
+  
+
+redis - > valkey 쓰면 비용 정확하게 20% 감소. 7.2를 권장. 안할 이유가 없다. 빠르게 전환하는게 좋다.
+
+  
+
+pubsub 
+
+  
+
+dynamodb. 버전이 없음. 무중단. 항상 떠있음.
+
+  
+
+user pattern 실제 패턴 예시.
+
+  
+
+당근 기술블로그 feature store "추천의 심장 피쳐스토어"
+
+  
+
+  
+
+session store.
+
+2018 reinvent: dynmamodb underthe hood
+
+  
+
+elastic cahce 샤딩해서 session 쓰더라도 버전업이나 fail over 발생 시 뒷단에 ddb durable 스토리지를 같이 쓴다. 레이어 두개를 둔다.
+
+  
+
+그럼 두개 정합성 어떻게 가져가는지? 하 질문했었어야하는데 골이 띵
+
+  
+
+-----------------------------------------------------------
+
+  
+
+pk, sk string을 쓴다. string은 string, number 둘 다 커버 가능
+
+  
+
+pk, sk 동일 한 값 두개 넣는 경우는 싱글테이블의 경우 pk만 필요한경우, sk 만 필요한 경우 다 있을 수 있으니
+
+  
+
+단독 attr에 전부 넣느냐? 쪼개서 별도 attr에 넣을까? ->  gsi 에서 키로 쓸 수 있는지 
+
+  
+
+싱글테이블 썻을 때 동일 테이블에 조인결과를 같이 넣어드려서
+
+  
+
+  
+
+키 prefix를 둔다.
+
+앞에 messgae 를 둔다. 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+-----------------
+
+[https://aws.amazon.com/ko/blogs/korea/how-amazon-dynamodb-adaptive-capacity-accommodates-uneven-data-access-patterns-or-why-what-you-know-about-dynamodb-might-be-outdated/](https://aws.amazon.com/ko/blogs/korea/how-amazon-dynamodb-adaptive-capacity-accommodates-uneven-data-access-patterns-or-why-what-you-know-about-dynamodb-might-be-outdated/)

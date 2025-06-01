@@ -8,3 +8,10 @@ t2 = id3 * t1         // 변수 id3와 t1을 곱함
 t3 = id2 + t2         // 변수 id2와 t2를 더함
 id1 = t3              // 결과를 id1에 저장
 
+
+1.6.2 Environments and States
+
+프로그램에서 변수 이름 → 메모리 위치 → 실제 값은 **순차적으로 바인딩(binding)** 됨
+이 과정은 **정적(static)** 또는 **동적(dynamic)** 으로 이루어질 수 있음.
+
+

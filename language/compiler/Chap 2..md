@@ -38,10 +38,10 @@ stmt → if ( expr ) stmt else stmt
 - 
 stmt는 'if (expr) stmt else stmt' 형태일 수 있다"는 뜻
 
-|용어|의미|
-|---|---|
-|**Terminal**|실제 코드에 등장하는 고정된 기호 (`if`, `else`, `(`, `)`, `{`, `}` 등)|
-|**Non-terminal**|문법 구조를 표현하는 변수 (`stmt`, `expr`, `decl` 등)|
-|**Production**|하나의 문법 규칙 (`stmt → if ( expr ) stmt else stmt`)|
-|**Grammar**|이런 Production 들의 모음|
-|**CFG**|문맥 자유 문법, 대부분의 프로그래밍 언어의 구조를 표현하기 위한 문법 형식|
+| 용어               | 의미                                                      |
+| ---------------- | ------------------------------------------------------- |
+| **Terminal**     | 실제 코드에 등장하는 고정된 기호 (`if`, `else`, `(`, `)`, `{`, `}` 등) |
+| **Non-terminal** | 문법 구조를 표현하는 변수 (`stmt`, `expr`, `decl` 등)               |
+| **Production**   | 하나의 문법 규칙 (`stmt → if ( expr ) stmt else stmt`)         |
+| **Grammar**      | 이런 Production 들의 모음                                     |
+| **CFG**          | 문맥 자유 문법, 대부분의 프로그래밍 언어의 구조를 표현하기 위한 문법 형식              |

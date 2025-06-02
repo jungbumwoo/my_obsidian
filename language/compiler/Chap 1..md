@@ -33,3 +33,12 @@ void func() {
 }
 
 ```
+
+
+1.6.6 Parameter Passing Mechanism
+
+ **Call by Reference란?**
+
+> **Call by Reference**는 함수에 **변수의 주소(참조)**를 직접 넘기는 방식.  
+> 함수 안에서 값을 바꾸면 **원본 변수에도 영향을 줌**.
+

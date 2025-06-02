@@ -45,3 +45,32 @@ stmt는 'if (expr) stmt else stmt' 형태일 수 있다"는 뜻
 | **Production**   | 하나의 문법 규칙 (`stmt → if ( expr ) stmt else stmt`)         |
 | **Grammar**      | 이런 Production 들의 모음                                     |
 | **CFG**          | 문맥 자유 문법, 대부분의 프로그래밍 언어의 구조를 표현하기 위한 문법 형식              |
+
+2.2 Definition of Grammers
+
+덧셈과 뺄셈이 포함된 숫자 표현식을 **문맥 자유 문법(CFG)**으로 표현하는 방법을 설명
+
+- **list → list + digit**:  
+    예: `3+5`, 또는 `3+5+2`, 즉 **앞부분이 list이고 마지막에 + 숫자가 추가됨**
+    
+- **list → list - digit**:  
+    예: `9-2`, 또는 `9-2-1`
+    
+- **list → digit**:  
+    한 자리 숫자 하나일 수도 있음 (예: `7`)
+    
+- **digit → 0 | 1 | ... | 9**:  
+    한 자리 숫자는 이렇게 정의됨
+
+하나로 묶으면,
+`list → list + digit | list - digit | digit`
+
+ex)  `9-5+2`는 아래처럼 분석
+```scss
+list
+→ list + digit
+→ (list - digit) + digit
+→ ((digit) - digit) + digit
+→ ((9) - 5) + 2
+```
+

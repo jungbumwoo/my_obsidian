@@ -128,9 +128,9 @@ list
 문법 규칙에다가 **실제 코드 조각을 붙여서**,  
 **구문 분석(parsing)** 중에 그 코드들을 **차례로 실행**
 
-|목적|예시|
-|---|---|
-|계산|`E.val = E₁.val + T.val`|
-|출력|`print('+')`|
-|AST 생성|`E.node = new AddNode(E₁.node, T.node)`|
-|코드 생성|`E.code = concat(E₁.code, T.code, "ADD")`|
+| 목적     | 예시                                        |
+| ------ | ----------------------------------------- |
+| 계산     | `E.val = E₁.val + T.val`                  |
+| 출력     | `print('+')`                              |
+| AST 생성 | `E.node = new AddNode(E₁.node, T.node)`   |
+| 코드 생성  | `E.code = concat(E₁.code, T.code, "ADD")` |

@@ -38,7 +38,9 @@ stmt → if ( expr ) stmt else stmt
 - `→` 는 "**~는 ~로 구성될 수 있다**"는 의미
     
 - 하나의 비터미널이 어떤 터미널/비터미널 조합으로 확장될 수 있는지 정의함
-- 
+- production body: 문법 규칙(->)의  오른쪽 부분 
+
+
 stmt는 'if (expr) stmt else stmt' 형태일 수 있다"는 뜻
 
 | 용어               | 의미                                                      |

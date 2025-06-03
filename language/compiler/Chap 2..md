@@ -80,3 +80,4 @@ list
 > **Derivation**은 문법의 **시작 기호(start symbol)**에서 시작해서  
 > **생산 규칙(production rule)**을 반복적으로 적용하면서  
 > **문자열을 생성해 나가는 과정**
+

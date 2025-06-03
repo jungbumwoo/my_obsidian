@@ -17,6 +17,9 @@
     예: `expr`(표현식), `stmt`(문장), `decl`(선언) 등
 
 
+statement: 실행가능한 최소의 독립적인 코드 조각
+expression: 수식. 하나 이상의 값으로 표현 될 수 있는 코드
+
 ex)
 Java if else
 ```Java

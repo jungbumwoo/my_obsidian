@@ -215,3 +215,18 @@ A → X₁ X₂ ... Xₙ
 
 즉, 파서가 `rest → + term ...` 규칙을 사용할 때,  
 `term` 뒤에 `+` 기호를 바로 출력하도록 지정한 것.
+
+ex)
+입력 수식: `9 - 5 + 2`
+output: `95-2+`
+
+```scss
+expr → term rest
+     → 9 rest
+        → - term { print('-') } rest1
+              → 5 rest1
+                    → + term { print('+') } rest2
+                          → 2 rest2
+                                → ε
+
+```

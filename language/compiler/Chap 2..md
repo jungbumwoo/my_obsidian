@@ -230,3 +230,69 @@ expr → term rest
                                 → ε
 
 ```
+
+
+
+#### 2.3 Exercises for Section 2.3
+
+
+2.3.1
+Construct a syntax-directed translation scheme that translates arithmetic expressions from infix notation into prefix notation in which an operator appears before its operands; e.g. , -xy is the prefix notation for x - y. Give annotated parse trees for the inputs 9-5+2 and 9-5*2.
+
+
+Ans)
+productions:
+
+```
+expr -> expr + term
+      | expr - term
+      | term
+term -> term * factor
+      | term / factor
+      | factor
+factor -> digit | (expr)
+```
+
+translation schemes:
+
+```
+expr -> {print("+")} expr + term
+      | {print("-")} expr - term
+      | term
+term -> {print("*")} term * factor
+      | {print("/")} term / factor
+      | factor
+factor -> digit {print(digit)}
+        | (expr)
+```
+
+ 2.3.2
+Construct a syntax-directed translation scheme that translates arithmetic expressions from postfix notation into infix notation. Give annotated parse trees for the inputs 95-2 _and 952_-.
+
+Ans)
+
+productions:
+
+```
+expr -> expr expr +
+      | expr expr -
+      | expr expr *
+      | expr expr /
+      | digit
+```
+
+translation schemes:
+
+```
+expr -> expr {print("+")} expr +
+      | expr {print("-")} expr -
+      | {print("(")} expr {print(")*(")} expr {print(")")} *
+      | {print("(")} expr {print(")/(")} expr {print(")")} /
+      | digit {print(digit)}
+```
+
+#### Another reference answer
+
+```
+E -> {print("(")} E {print(op)} E {print(")"}} op | digit {print(digit)}
+```

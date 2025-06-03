@@ -81,3 +81,6 @@ list
 > **생산 규칙(production rule)**을 반복적으로 적용하면서  
 > **문자열을 생성해 나가는 과정**
 
+2.2.5 연산자의 우선순위(precedence)
+
+2.2.6 연산자의 결합 방향(associativity)

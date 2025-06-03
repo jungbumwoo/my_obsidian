@@ -89,3 +89,6 @@ list
 2.2.5 연산자의 우선순위(precedence)
 
 2.2.6 연산자의 결합 방향(associativity)
+
+## 2.3 Syntax Directed Translation (구문 지향 번역)
+

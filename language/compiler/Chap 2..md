@@ -280,7 +280,7 @@ expr -> expr expr +
       | expr expr /
       | digit
 ```
-ㅇㄴㄹㄴ
+
 translation schemes:
 
 ```

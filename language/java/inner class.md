@@ -81,17 +81,14 @@ CopyEdit
     - 성능: 생성 시 외부 참조를 설정해야 하므로 약간의 오버헤드 발생
         
 
----
 
-## ✅ 요약
-
-|개념|설명|
-|---|---|
-|내부 클래스 생성 시|외부 클래스 인스턴스를 반드시 참조해야 함|
-|이 연결은 변경 가능?|❌ 생성 시점에 고정됨|
-|일반적인 생성 방식|외부 클래스의 인스턴스 메서드 내에서 `new Inner()`|
-|수동 생성 방식|외부에서 `outer.new Inner()`|
-|성능 영향|메모리: 외부 인스턴스 참조 필드 포함  <br>시간: 연결 설정 비용 발생|
+| 개념           | 설명                                         |
+| ------------ | ------------------------------------------ |
+| 내부 클래스 생성 시  | 외부 클래스 인스턴스를 반드시 참조해야 함                    |
+| 이 연결은 변경 가능? | ❌ 생성 시점에 고정됨                               |
+| 일반적인 생성 방식   | 외부 클래스의 인스턴스 메서드 내에서 `new Inner()`         |
+| 수동 생성 방식     | 외부에서 `outer.new Inner()`                   |
+| 성능 영향        | 메모리: 외부 인스턴스 참조 필드 포함  <br>시간: 연결 설정 비용 발생 |
 
 ---
 
@@ -100,6 +97,71 @@ CopyEdit
 > `non-static inner class`는 항상 외부 인스턴스에 종속적이며, 그 연결은 메모리와 생성 시간에 부담을 줄 수 있습니다.  
 > 그래서 외부 인스턴스가 꼭 필요하지 않다면 `static nested class`를 쓰는 게 더 낫다고 Effective Java는 말하고 있는 것입니다.
 
-더 깊이 보고 싶으시면 바이트코드 구조나 실제 `javap` 명령으로 컴파일 결과도 보여드릴 수 있어요!
 
-Ask ChatGPT
+--------
+
+```java
+// Outer.java
+public class Outer {
+    private String msg = "hello";
+
+    // static nested class
+    public static class StaticNested {
+        public void print() {
+            System.out.println("StaticNested");
+        }
+    }
+
+    // non-static inner class
+    public class Inner {
+        public void print() {
+            System.out.println("Inner: " + msg);
+        }
+    }
+}
+```
+
+```
+◎ javac Outer.java
+◎ ls | grep Outer2
+
+// output
+Outer2.class
+Outer2.java
+Outer2$Inner.class
+Outer2$StaticNested.class
+
+```
+
+
+`javap -c Outer2$Inner` 실행 시
+
+```java
+Compiled from "Outer2.java"
+public class Outer2 {
+  public Outer2();
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: ldc           #7                  // String hello
+         7: putfield      #9                  // Field msg:Ljava/lang/String;
+        10: return
+
+  public static void main(java.lang.String[]);
+    Code:
+         0: new           #15                 // class Outer2$StaticNested
+         3: dup
+         4: invokespecial #17                 // Method Outer2$StaticNested."<init>":()V
+         7: invokevirtual #18                 // Method Outer2$StaticNested.print:()V
+        10: new           #21                 // class Outer2$Inner
+        13: dup
+        14: new           #10                 // class Outer2
+        17: dup
+        18: invokespecial #23                 // Method "<init>":()V
+        21: invokespecial #24                 // Method Outer2$Inner."<init>":(LOuter2;)V
+        24: invokevirtual #27                 // Method Outer2$Inner.print:()V
+        27: return
+}
+```
+

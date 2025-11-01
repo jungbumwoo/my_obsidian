@@ -7,7 +7,7 @@ non-static member class의 인스턴스는 생성될 때 외부 클래스 인스
     
 ```java
 class Outer {
-    class Inner {
+    class Inner {  
         void hello() {
             System.out.println("Hello from inner, outer hash = " + Outer.this.hashCode());
         }
@@ -60,7 +60,7 @@ CopyEdit
 `Outer outer = new Outer(); Outer.Inner inner = outer.new Inner();  // 👈 outer와 연결해서 생성`
 
 - 위처럼 `.new` 구문을 써야 내부 클래스 생성이 가능합니다.
-    
+     
 
 ---
 
@@ -89,13 +89,6 @@ CopyEdit
 | 일반적인 생성 방식   | 외부 클래스의 인스턴스 메서드 내에서 `new Inner()`         |
 | 수동 생성 방식     | 외부에서 `outer.new Inner()`                   |
 | 성능 영향        | 메모리: 외부 인스턴스 참조 필드 포함  <br>시간: 연결 설정 비용 발생 |
-
----
-
-## 🔚 결론
-
-> `non-static inner class`는 항상 외부 인스턴스에 종속적이며, 그 연결은 메모리와 생성 시간에 부담을 줄 수 있습니다.  
-> 그래서 외부 인스턴스가 꼭 필요하지 않다면 `static nested class`를 쓰는 게 더 낫다고 Effective Java는 말하고 있는 것입니다.
 
 
 --------
@@ -130,7 +123,6 @@ Outer2.class
 Outer2.java
 Outer2$Inner.class
 Outer2$StaticNested.class
-
 ```
 
 
@@ -165,3 +157,8 @@ public class Outer2 {
 }
 ```
 
+static inner class 생성은 어떻게?
+
+
+
+------

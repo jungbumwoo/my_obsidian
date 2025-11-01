@@ -33,3 +33,10 @@ __consumer_offsets topic is one of the TopicPartitions in the transaction, the c
 
 TransactionalId 는 어떻게 설정하는거지?
 
+----
+
+keep
+
+https://cwiki.apache.org/confluence/display/KAFKA/Transactional+Messaging+in+Kafka
+
+https://docs.google.com/document/d/11Jqy_GjUGtdXJK94XGsEIK7CP1SnQGdp2eF0wSw9ra8/edit?tab=t.0#heading=h.xq0ee1vnpz4o

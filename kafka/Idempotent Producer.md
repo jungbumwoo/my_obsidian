@@ -7,3 +7,10 @@ There are two common reasons duplicate messages may occur:
 2. If a consumer reads a message from a topic and then crashes then when the consumer restarts or another instances takes over consumption the new consumer will start from the last known position of the original consumer.
 
 To complete this proposal we just need to figure out how to provide unique PIDs to producers, how to provide fault tolerance for the highwater marks, and how to provide the "fencing" described above to prevent two producers with the same PID from interfering with one another.
+
+---
+
+https://www.confluent.io/blog/exactly-once-semantics-are-possible-heres-how-apache-kafka-does-it/
+
+- `enable.idempotence=true
+	- partiton 별로 보장되는 속성임.

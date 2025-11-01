@@ -1,0 +1,3 @@
+mysql
+
+https://www.inflearn.com/course/5%EC%B2%9C%EC%96%B5%EA%B1%B4%EC%9D%B4-%EB%84%98%EB%8A%94-%EA%B8%88%EC%9C%B5-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%98

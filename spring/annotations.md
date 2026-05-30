@@ -47,3 +47,36 @@
     - 인터페이스 기반 프록시는 실제 객체의 클래스가 아닌 “프록시 클래스”를 드러내기도 합니다.
 
 ---
+DI 순환 참조는 어떻게 피하거나 해결될지?
+
+
+todo 찾아볼 것
+- Spring Bean LifeCycle 전체 흐름 (PostProcessor → Proxy → Bean 생성 순서)
+    
+- AOP가 메서드를 어떻게 가로채는지 (CGLIB 바이트코드 구조까지)
+    
+- Reflection의 성능/오버헤드는 어느 정도인지
+    
+- Spring Boot 자동 구성(@EnableAutoConfiguration)이 어떻게 동작하는지
+    
+- @Transactional 이 rollback 되는 내부 구조
+    
+- DI가 어떻게 순환참조를 해결하는지
+- - @Transactional(propagation = …) 전파 레벨의 진짜 내부 동작
+    
+- CGLIB 프록시 구조 자체(프록시 바이트코드 분석)
+    
+- readOnly = true가 실제로 어떤 최적화 하는지
+    
+- 트랜잭션 경계에서 Hibernate 1차 캐시(i.e., 영속성 컨텍스트)가 어떻게 움직이는지
+JDK Proxy의 실제 호출 구조 (InvocationHandler.invoke)
+
+@Transactional 의 전파(Propagation) 정확한 내부 동작
+
+
+
+Spring Bean LifeCycle + Proxy 생성 순서 (PostProcessor 레벨까지)
+
+AOP Pointcut 매칭 과정(AspectJ Expression Parser 내부)
+
+실제 @Transactional 프록시 바이트코드를 IntelliJ로 확인하는 법?
